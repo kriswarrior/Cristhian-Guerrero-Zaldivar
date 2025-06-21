@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristhian Guerrero - Cybersecurity & Operations Leader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --dark-gradient: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 100%);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --text-primary: #0f0f23;
+            --text-secondary: #6b7280;
+            --text-light: #9ca3af;
+            --shadow-primary: 0 20px 40px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 25px 50px rgba(0, 0, 0, 0.15);
+            --border-radius: 24px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 60%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .cv-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-primary);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            overflow: hidden;
+            position: relative;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cv-header {
+            background: var(--primary-gradient);
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cv-header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .profile-section {
+            position: relative;
+            z-index: 2;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin: 0 auto 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            font-weight: 700;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        .name {
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .title {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.9rem;
+            transition: transform 0.2s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 0;
+            min-height: 600px;
+        }
+
+        .sidebar {
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 100%);
+            color: white;
+            padding: 40px 30px;
+            position: relative;
+        }
+
+        .sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1px;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.2), transparent);
+        }
+
+        .content {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.98);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .sidebar .section-title {
+            color: #4facfe;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent-gradient);
+            border-radius: 2px;
+        }
+
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .skill-item:hover::before {
+            left: 100%;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(79, 172, 254, 0.3);
+        }
+
+        .skill-level {
+            margin-top: 8px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: var(--accent-gradient);
+            border-radius: 2px;
+            animation: fillProgress 2s ease-out;
+        }
+
+        @keyframes fillProgress {
+            from { width: 0%; }
+        }
+
+        .experience-item {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--primary-gradient);
+        }
+
+        .experience-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 5px;
+        }
+
+        .company {
+            font-size: 0.95rem;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .date {
+            background: var(--accent-gradient);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .achievements {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .achievements li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .achievements li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: 700;
+        }
+
+        .education-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .education-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .degree {
+            font-weight: 600;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .school {
+            color: #4facfe;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .year {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+        }
+
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .language-item:last-child {
+            border-bottom: none;
+        }
+
+        .language-level {
+            background: rgba(79, 172, 254, 0.3);
+            color: #4facfe;
+            padding: 2px 8px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .profile-summary {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-summary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--primary-gradient);
+        }
+
+        .profile-summary p {
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .certification-badge {
+            display: inline-block;
+            background: var(--secondary-gradient);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin: 5px 5px 5px 0;
+            transition: transform 0.2s ease;
+        }
+
+        .certification-badge:hover {
+            transform: scale(1.05);
+        }
+
+        /* Mobile First - Small screens */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .cv-header {
+                padding: 30px 20px;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+            
+            .title {
+                font-size: 1rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .contact-item {
+                font-size: 0.85rem;
+            }
+            
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                padding: 30px 20px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .skill-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            
+            .skill-item {
+                padding: 12px;
+            }
+        }
+
+        /* Tablet - Medium screens */
+        @media (min-width: 481px) and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .cv-header {
+                padding: 35px 25px;
+            }
+            
+            .name {
+                font-size: 2.5rem;
+            }
+            
+            .contact-info {
+                gap: 20px;
+            }
+            
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                padding: 35px 25px;
+            }
+            
+            .content {
+                padding: 35px 25px;
+            }
+            
+            .skill-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Desktop - Large screens */
+        @media (min-width: 769px) and (max-width: 1200px) {
+            body {
+                padding: 20px;
+            }
+            
+            .cv-container {
+                max-width: 1000px;
+            }
+            
+            .cv-header {
+                padding: 40px 30px;
+            }
+            
+            .main-content {
+                grid-template-columns: 380px 1fr;
+            }
+            
+            .sidebar {
+                padding: 40px 30px;
+            }
+            
+            .content {
+                padding: 40px 35px;
+            }
+            
+            .skill-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            
+            .experience-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            .date {
+                align-self: flex-start;
+            }
+        }
+
+        /* Large Desktop - Extra large screens */
+        @media (min-width: 1201px) {
+            body {
+                padding: 30px;
+            }
+            
+            .cv-container {
+                max-width: 1400px;
+            }
+            
+            .cv-header {
+                padding: 50px 40px;
+            }
+            
+            .name {
+                font-size: 3.5rem;
+            }
+            
+            .title {
+                font-size: 1.4rem;
+            }
+            
+            .main-content {
+                grid-template-columns: 450px 1fr;
+            }
+            
+            .sidebar {
+                padding: 50px 40px;
+            }
+            
+            .content {
+                padding: 50px 45px;
+            }
+            
+            .skill-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            
+            .skill-item {
+                padding: 18px;
+            }
+            
+            .experience-item {
+                padding: 30px;
+            }
+            
+            .section {
+                margin-bottom: 50px;
+            }
+            
+            .profile-summary {
+                padding: 30px;
+            }
+            
+            .profile-summary p {
+                font-size: 1.1rem;
+                line-height: 1.7;
+            }
+        }
+
+        /* Ultra-wide screens */
+        @media (min-width: 1600px) {
+            .cv-container {
+                max-width: 1600px;
+            }
+            
+            .main-content {
+                grid-template-columns: 500px 1fr;
+            }
+            
+            .name {
+                font-size: 4rem;
+            }
+            
+            .cv-header {
+                padding: 60px 50px;
+            }
+            
+            .sidebar {
+                padding: 60px 50px;
+            }
+            
+            .content {
+                padding: 60px 55px;
+            }
+            
+            .skill-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .cv-container {
+                box-shadow: none;
+                border-radius: 0;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header class="cv-header">
+            <div class="profile-section">
+                <div class="profile-image">
+                    CG
+                </div>
+                <h1 class="name">Cristhian Guerrero</h1>
+                <div class="title">Cybersecurity Professional & Operations Leader</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Austin, TX</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 512-620-5984</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>criswarriorz2003@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/cristhian-guerrero</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <div class="section">
+                    <h2 class="section-title">Core Skills</h2>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt" style="font-size: 1.5rem; color: #4facfe; margin-bottom: 8px;"></i>
+                            <div>Cybersecurity</div>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-users" style="font-size: 1.5rem; color: #4facfe; margin-bottom: 8px;"></i>
+                            <div>Team Leadership</div>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs" style="font-size: 1.5rem; color: #4facfe; margin-bottom: 8px;"></i>
+                            <div>Operations</div>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line" style="font-size: 1.5rem; color: #4facfe; margin-bottom: 8px;"></i>
+                            <div>Process Optimization</div>
+                            <div class="skill-level">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-item">
+                        <div class="degree">Bachelor's in Cybersecurity & IT</div>
+                        <div class="school">Universidad de Ciencias Informáticas</div>
+                        <div class="year">2021 - 2023 | Havana, Cuba</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Languages</h2>
+                    <div class="language-item">
+                        <span>Spanish</span>
+                        <div class="language-level">Native</div>
+                    </div>
+                    <div class="language-item">
+                        <span>English</span>
+                        <div class="language-level">Advanced</div>
+                    </div>
+                    <div class="language-item">
+                        <span>ASL</span>
+                        <div class="language-level">Conversational</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="certification-badge">OSHA Certified</div>
+                    <div class="certification-badge">Food Safety</div>
+                    <div class="certification-badge">Forklift Operator</div>
+                    <div class="certification-badge">Heavy Machinery</div>
+                </div>
+            </aside>
+
+            <main class="content">
+                <div class="section">
+                    <div class="profile-summary">
+                        <p>Bilingual cybersecurity professional with proven leadership experience and strong technical foundation. Expertise in team management, operational excellence, and security protocols. Demonstrated ability to optimize processes, ensure compliance, and drive results in fast-paced environments. Combining technical expertise with practical operational skills to deliver exceptional outcomes.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Professional Experience</h2>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Team Lead - Overnight Operations</div>
+                                <div class="company">Walmart Supercenter • Austin, TX</div>
+                            </div>
+                            <div class="date">Dec 2024 - Present</div>
+                        </div>
+                        <ul class="achievements">
+                            <li>Lead overnight stocking team of 15+ associates, optimizing workflow efficiency by 25%</li>
+                            <li>Implemented inventory management protocols reducing discrepancies by 40%</li>
+                            <li>Maintain 100% OSHA compliance through rigorous safety training and enforcement</li>
+                            <li>Operate certified forklift and heavy machinery with zero safety incidents</li>
+                            <li>Developed cross-training program improving team versatility and reducing downtime</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Fresh Food Associate</div>
+                                <div class="company">Walmart Supercenter • Las Vegas, NV</div>
+                            </div>
+                            <div class="date">Oct 2023 - Sep 2024</div>
+                        </div>
+                        <ul class="achievements">
+                            <li>Managed meat and produce departments ensuring 99%+ food safety compliance</li>
+                            <li>Implemented quality control measures reducing waste by 30%</li>
+                            <li>Trained new associates on food handling protocols and safety procedures</li>
+                            <li>Maintained temperature logs and inventory tracking systems</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div>
+                                <div class="job-title">Houseman</div>
+                                <div class="company">Luxury Resort • Las Vegas, NV</div>
+                            </div>
+                            <div class="date">Mar 2023 - Oct 2023</div>
+                        </div>
+                        <ul class="achievements">
+                            <li>Provided operational support for high-end hospitality operations</li>
+                            <li>Maintained exceptional service standards in fast-paced environment</li>
+                            <li>Coordinated with multiple departments to ensure seamless guest experiences</li>
+                            <li>Handled special events and VIP guest requirements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+                        <div style="background: rgba(102, 126, 234, 0.1); padding: 20px; border-radius: 12px; border: 1px solid rgba(102, 126, 234, 0.2);">
+                            <h3 style="color: #667eea; margin-bottom: 10px;"><i class="fas fa-shield-alt"></i> Security & Compliance</h3>
+                            <p style="color: #6b7280; font-size: 0.9rem;">OSHA regulations, safety protocols, risk assessment, compliance monitoring</p>
+                        </div>
+                        <div style="background: rgba(79, 172, 254, 0.1); padding: 20px; border-radius: 12px; border: 1px solid rgba(79, 172, 254, 0.2);">
+                            <h3 style="color: #4facfe; margin-bottom: 10px;"><i class="fas fa-cogs"></i> Operations Management</h3>
+                            <p style="color: #6b7280; font-size: 0.9rem;">Inventory control, process optimization, quality assurance, logistics coordination</p>
+                        </div>
+                        <div style="background: rgba(245, 87, 108, 0.1); padding: 20px; border-radius: 12px; border: 1px solid rgba(245, 87, 108, 0.2);">
+                            <h3 style="color: #f5576c; margin-bottom: 10px;"><i class="fas fa-users"></i> Leadership & Training</h3>
+                            <p style="color: #6b7280; font-size: 0.9rem;">Team development, performance management, training programs, conflict resolution</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Key Achievements</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+                        <div style="text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.8); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.5);">
+                            <div style="font-size: 2rem; font-weight: 700; color: #667eea;">25%</div>
+                            <div style="color: #6b7280; font-size: 0.9rem;">Efficiency Improvement</div>
+                        </div>
+                        <div style="text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.8); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.5);">
+                            <div style="font-size: 2rem; font-weight: 700; color: #4facfe;">40%</div>
+                            <div style="color: #6b7280; font-size: 0.9rem;">Inventory Accuracy</div>
+                        </div>
+                        <div style="text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.8); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.5);">
+                            <div style="font-size: 2rem; font-weight: 700; color: #f5576c;">100%</div>
+                            <div style="color: #6b7280; font-size: 0.9rem;">Safety Compliance</div>
+                        </div>
+                        <div style="text-align: center; padding: 20px; background: rgba(255, 255, 255, 0.8); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.5);">
+                            <div style="font-size: 2rem; font-weight: 700; color: #8b5cf6;">15+</div>
+                            <div style="color: #6b7280; font-size: 0.9rem;">Team Members Led</div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
