@@ -120,20 +120,25 @@
         }
 
         .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            margin: 0 auto 20px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 48px;
-            color: white;
-            font-weight: 700;
-            transition: transform 0.3s ease;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    margin: 0 auto 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background: none;
+}
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+        .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
         }
 
         .profile-image:hover {
@@ -708,7 +713,7 @@
         <header class="cv-header">
             <div class="profile-section">
                 <div class="profile-image">
-                    CG
+    <img src="crisgz.jpg" alt="Cristhian Guerrero">
                 </div>
                 <h1 class="name">Cristhian Guerrero</h1>
                 <div class="title">Cybersecurity Professional & Operations Leader</div>
