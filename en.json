@@ -1,0 +1,138 @@
+{
+  "head": {
+    "title": "Cristhian Guerrero Zaldívar | Operations Leader · Cybersecurity & Technology",
+    "description": "Professional profile of Cristhian Guerrero Zaldívar, a cybersecurity and operations leader with experience in process optimization, team management, and technology solutions.",
+    "ogTitle": "Cristhian Guerrero Zaldívar | Operations Leader · Cybersecurity & Technology",
+    "ogDescription": "Professional profile of Cristhian Guerrero Zaldívar, a cybersecurity and operations leader with experience in process optimization, team management, and technology solutions."
+  },
+  "button": {
+    "ariaLabel": "Switch language"
+  },
+  "header": {
+    "profileAlt": "Portrait of Cristhian Guerrero Zaldívar",
+    "name": "Cristhian Guerrero Zaldívar",
+    "title": "Operations Leader · Cybersecurity & Technology",
+    "location": "Austin, TX"
+  },
+  "sidebar": {
+    "coreSkillsTitle": "Core Skills",
+    "coreSkills": {
+      "cybersecurity": "Cybersecurity",
+      "teamLeadership": "Team Leadership",
+      "operations": "Operations",
+      "processOptimization": "Process Optimization"
+    },
+    "educationTitle": "Education",
+    "education": {
+      "degree1": "Bachelor's in Cybersecurity & IT",
+      "school1": "University of Informatics Sciences",
+      "year1": "2021 - 2023 | Havana, Cuba",
+      "degree2": "License to Lead & Operate",
+      "school2": "Walmart Academy",
+      "year2": "2025 | Texas, U.S."
+    },
+    "languagesTitle": "Languages",
+    "languages": {
+      "spanish": "Spanish",
+      "native": "Native",
+      "english": "English",
+      "advanced": "Advanced",
+      "asl": "ASL",
+      "conversational": "Conversational"
+    },
+    "certificationsTitle": "Certifications",
+    "certifications": {
+      "osha": "OSHA Certified",
+      "foodSafety": "Food Safety",
+      "forklift": "Forklift Operator",
+      "heavyMachinery": "Heavy Machinery"
+    },
+    "skillsTitle": "Skills",
+    "skills": {
+      "python": "Python3 Advanced Programming",
+      "ethics": "Professional Ethics",
+      "problemSolving": "Problem-solving",
+      "adaptability": "Adaptability",
+      "communication": "Effective Communication",
+      "delegation": "Goal-oriented Delegation",
+      "mentorship": "Team Mentorship",
+      "decisionMaking": "Decision-making",
+      "flexibility": "Flexibility",
+      "emotionalIntelligence": "Emotional Intelligence"
+    }
+  },
+  "summary": {
+    "description": "Bilingual cybersecurity professional with proven leadership experience and strong technical foundation. Expertise in team management, operational excellence, and security protocols. Demonstrated ability to optimize processes, ensure compliance, and drive results in fast-paced environments. Combining technical expertise with practical operational skills to deliver exceptional outcomes."
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "roles": {
+      "overnight": {
+        "title": "Led a Team - Overnight Operations",
+        "company": "Walmart Supercenter • Austin, TX",
+        "date": "Dec 2024 - Present",
+        "bullets": [
+          "Lead overnight stocking team of 8+ associates, optimizing workflow efficiency by 15%",
+          "Maintain 100% OSHA compliance through rigorous safety training and enforcement",
+          "Operate certified forklift and heavy machinery with zero safety incidents",
+          "Developed cross-training program improving team versatility and reducing downtime"
+        ]
+      },
+      "freshFood": {
+        "title": "Fresh Food Associate",
+        "company": "Walmart Supercenter • Las Vegas, NV",
+        "date": "Oct 2023 - Sep 2024",
+        "bullets": [
+          "Managed meat and produce departments ensuring 99%+ food safety compliance",
+          "Implemented quality control measures reducing waste by 30%",
+          "Trained new associates on food handling protocols and safety procedures",
+          "Maintained temperature logs and inventory tracking systems"
+        ]
+      },
+      "houseman": {
+        "title": "Houseman",
+        "company": "Luxury Resort • Las Vegas, NV",
+        "date": "Mar 2023 - Oct 2023",
+        "bullets": [
+          "Provided operational support for high-end hospitality operations",
+          "Maintained exceptional service standards in fast-paced environment",
+          "Coordinated with multiple departments to ensure seamless guest experiences",
+          "Handled special events and VIP guest requirements"
+        ]
+      },
+      "cybersecurity": {
+        "title": "Cybersecurity Analyst",
+        "company": "NovaSec Solutions • Havana, Cuba",
+        "date": "Jul 2021 – Jan 2023",
+        "bullets": [
+          "Monitored and responded to network threats and anomalies across critical systems",
+          "Led internal vulnerability assessments and coordinated remediation efforts",
+          "Implemented secure access policies for remote work environments",
+          "Collaborated with the IT department to enhance endpoint security architecture"
+        ]
+      }
+    }
+  },
+  "technical": {
+    "title": "Technical Expertise",
+    "security": {
+      "title": "Security & Compliance",
+      "description": "OSHA regulations, safety protocols, risk assessment, compliance monitoring"
+    },
+    "operations": {
+      "title": "Operations Management",
+      "description": "Inventory control, process optimization, quality assurance, logistics coordination"
+    },
+    "leadership": {
+      "title": "Leadership & Training",
+      "description": "Team development, performance management, training programs, conflict resolution"
+    }
+  },
+  "achievements": {
+    "title": "Key Achievements",
+    "efficiency": "Efficiency Improvement",
+    "inventory": "Inventory Accuracy",
+    "safety": "Safety Compliance",
+    "team": "Team Members Led"
+  }
+}
