@@ -64,6 +64,18 @@
   "summary": {
     "description": "Bilingual cybersecurity professional with proven leadership experience and strong technical foundation. Expertise in team management, operational excellence, and security protocols. Demonstrated ability to optimize processes, ensure compliance, and drive results in fast-paced environments. Combining technical expertise with practical operational skills to deliver exceptional outcomes."
   },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Technology initiatives where I apply my skills to craft people-first, high-impact solutions.",
+    "items": {
+      "wikimedia": {
+        "title": "Efemérides Wikimedia Feed",
+        "description": "Web app that queries the Wikipedia API to highlight notable events that happened on the user's birth date.",
+        "role": "Role: End-to-end development, experience design, and performance optimization.",
+        "cta": "Try the project"
+      }
+    }
+  },
   "experience": {
     "title": "Professional Experience",
     "roles": {

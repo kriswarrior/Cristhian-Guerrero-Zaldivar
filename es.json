@@ -64,6 +64,18 @@
   "summary": {
     "description": "Profesional bilingüe en ciberseguridad con experiencia comprobada en liderazgo y una sólida base técnica. Especialista en gestión de equipos, excelencia operativa y protocolos de seguridad. Demuestra capacidad para optimizar procesos, garantizar el cumplimiento normativo y alcanzar resultados en entornos dinámicos. Combina la experiencia técnica con habilidades operativas prácticas para entregar resultados sobresalientes."
   },
+  "projects": {
+    "title": "Proyectos destacados",
+    "subtitle": "Iniciativas tecnológicas donde aplico mis habilidades para crear soluciones centradas en las personas y el impacto.",
+    "items": {
+      "wikimedia": {
+        "title": "Efemérides Wikimedia Feed",
+        "description": "Aplicación web que consulta la API de Wikipedia para mostrar sucesos relevantes ocurridos en la fecha de nacimiento del usuario.",
+        "role": "Rol: Desarrollo end-to-end, diseño de la experiencia y optimización de rendimiento.",
+        "cta": "Probar proyecto"
+      }
+    }
+  },
   "experience": {
     "title": "Experiencia Profesional",
     "roles": {
