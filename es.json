@@ -73,6 +73,12 @@
         "description": "Aplicación web que consulta la API de Wikipedia para mostrar sucesos relevantes ocurridos en la fecha de nacimiento del usuario.",
         "role": "Rol: Desarrollo end-to-end, diseño de la experiencia y optimización de rendimiento.",
         "cta": "Probar proyecto"
+      },
+      "trafficLight": {
+        "title": "Modelo de Clasificación de Semáforos",
+        "description": "Modelo de visión computacional que clasifica estados de semáforos con aprendizaje por transferencia y aumentación de imágenes.",
+        "role": "Rol: Desarrollo del pipeline de entrenamiento, métricas de evaluación y cuaderno de inferencia listo para despliegue.",
+        "cta": "Ver repositorio"
       }
     }
   },

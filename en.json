@@ -73,6 +73,12 @@
         "description": "Web app that queries the Wikipedia API to highlight notable events that happened on the user's birth date.",
         "role": "Role: End-to-end development, experience design, and performance optimization.",
         "cta": "Try the project"
+      },
+      "trafficLight": {
+        "title": "Traffic Light Classification Model",
+        "description": "Computer vision model that classifies traffic light states using transfer learning and image augmentation.",
+        "role": "Role: Built training pipeline, evaluation metrics, and deployment-ready inference notebook.",
+        "cta": "View repository"
       }
     }
   },
