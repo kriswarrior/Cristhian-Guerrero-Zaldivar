@@ -1,0 +1,155 @@
+{
+  "head": {
+    "title": "Cristhian Guerrero Zaldívar | Líder de Operaciones · Ciberseguridad y Tecnología",
+    "description": "Perfil profesional de Cristhian Guerrero Zaldívar, líder en ciberseguridad y operaciones con experiencia en optimización de procesos, gestión de equipos y soluciones tecnológicas.",
+    "ogTitle": "Cristhian Guerrero Zaldívar | Líder de Operaciones · Ciberseguridad y Tecnología",
+    "ogDescription": "Perfil profesional de Cristhian Guerrero Zaldívar, líder en ciberseguridad y operaciones con experiencia en optimización de procesos, gestión de equipos y soluciones tecnológicas."
+  },
+  "button": {
+    "ariaLabel": "Cambiar idioma"
+  },
+  "header": {
+    "profileAlt": "Retrato de Cristhian Guerrero Zaldívar",
+    "name": "Cristhian Guerrero Zaldívar",
+    "title": "Líder de Operaciones · Ciberseguridad y Tecnología",
+    "location": "Austin, TX"
+  },
+  "sidebar": {
+    "coreSkillsTitle": "Habilidades Clave",
+    "coreSkills": {
+      "cybersecurity": "Ciberseguridad",
+      "teamLeadership": "Liderazgo de Equipos",
+      "operations": "Operaciones",
+      "processOptimization": "Optimización de Procesos"
+    },
+    "educationTitle": "Formación Académica",
+    "education": {
+      "degree1": "Licenciatura en Ciberseguridad e Informática",
+      "school1": "Universidad de Ciencias Informáticas",
+      "year1": "2021 - 2023 | La Habana, Cuba",
+      "degree2": "Licencia para Liderar y Operar",
+      "school2": "Walmart Academy",
+      "year2": "2025 | Texas, EE. UU."
+    },
+    "languagesTitle": "Idiomas",
+    "languages": {
+      "spanish": "Español",
+      "native": "Nativo",
+      "english": "Inglés",
+      "advanced": "Avanzado",
+      "asl": "ASL",
+      "conversational": "Conversacional"
+    },
+    "certificationsTitle": "Certificaciones",
+    "certifications": {
+      "osha": "Certificación OSHA",
+      "foodSafety": "Seguridad Alimentaria",
+      "forklift": "Operador de Montacargas",
+      "heavyMachinery": "Maquinaria Pesada"
+    },
+    "skillsTitle": "Habilidades",
+    "skills": {
+      "python": "Programación Avanzada en Python3",
+      "ethics": "Ética Profesional",
+      "problemSolving": "Resolución de Problemas",
+      "adaptability": "Adaptabilidad",
+      "communication": "Comunicación Efectiva",
+      "delegation": "Delegación Orientada a Objetivos",
+      "mentorship": "Mentoría de Equipos",
+      "decisionMaking": "Toma de Decisiones",
+      "flexibility": "Flexibilidad",
+      "emotionalIntelligence": "Inteligencia Emocional"
+    }
+  },
+  "summary": {
+    "description": "Profesional bilingüe en ciberseguridad con experiencia comprobada en liderazgo y una sólida base técnica. Especialista en gestión de equipos, excelencia operativa y protocolos de seguridad. Demuestra capacidad para optimizar procesos, garantizar el cumplimiento normativo y alcanzar resultados en entornos dinámicos. Combina la experiencia técnica con habilidades operativas prácticas para entregar resultados sobresalientes."
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "roles": {
+      "overnight": {
+        "title": "Líder de Equipo - Operaciones Nocturnas",
+        "company": "Walmart Supercenter • Austin, TX",
+        "date": "Dic 2024 - Presente",
+        "bullets": [
+          "Dirigí un equipo nocturno de más de 8 asociados, optimizando la eficiencia del flujo de trabajo en un 15%",
+          "Mantuve el 100% de cumplimiento OSHA mediante formación rigurosa y seguimiento de seguridad",
+          "Operé montacargas certificados y maquinaria pesada sin incidentes de seguridad",
+          "Desarrollé un programa de rotación que mejoró la versatilidad del equipo y redujo tiempos muertos"
+        ]
+      },
+      "freshFood": {
+        "title": "Asociado de Alimentos Frescos",
+        "company": "Walmart Supercenter • Las Vegas, NV",
+        "date": "Oct 2023 - Sep 2024",
+        "bullets": [
+          "Gestioné los departamentos de carnes y productos garantizando más del 99% de cumplimiento sanitario",
+          "Implementé controles de calidad que redujeron el desperdicio en un 30%",
+          "Capacité a nuevos asociados en protocolos de manipulación de alimentos y procedimientos de seguridad",
+          "Mantuve registros de temperatura e inventario con precisión constante"
+        ]
+      },
+      "houseman": {
+        "title": "Auxiliar de Operaciones Hoteleras",
+        "company": "Luxury Resort • Las Vegas, NV",
+        "date": "Mar 2023 - Oct 2023",
+        "bullets": [
+          "Brindé soporte operativo para servicios de hospitalidad de alta gama",
+          "Mantuve estándares excepcionales de servicio en un entorno de alta demanda",
+          "Coordiné con múltiples departamentos para asegurar experiencias fluidas a los huéspedes",
+          "Atendí eventos especiales y requerimientos de huéspedes VIP"
+        ]
+      },
+      "cybersecurity": {
+        "title": "Analista de Ciberseguridad",
+        "company": "NovaSec Solutions • La Habana, Cuba",
+        "date": "Jul 2021 – Ene 2023",
+        "bullets": [
+          "Monitoreé y respondí a amenazas y anomalías de red en sistemas críticos",
+          "Lideré evaluaciones internas de vulnerabilidades y coordiné los planes de remediación",
+          "Implementé políticas de acceso seguro para entornos de trabajo remoto",
+          "Colaboré con el departamento de TI para fortalecer la seguridad de endpoints"
+        ]
+      }
+    }
+  },
+  "technical": {
+    "title": "Experiencia Técnica",
+    "security": {
+      "title": "Seguridad y Cumplimiento",
+      "description": "Regulaciones OSHA, protocolos de seguridad, evaluación de riesgos, monitoreo de cumplimiento"
+    },
+    "operations": {
+      "title": "Gestión de Operaciones",
+      "description": "Control de inventario, optimización de procesos, aseguramiento de calidad, coordinación logística"
+    },
+    "leadership": {
+      "title": "Liderazgo y Capacitación",
+      "description": "Desarrollo de equipos, gestión del desempeño, programas de formación, resolución de conflictos"
+    }
+  },
+  "achievements": {
+    "title": "Logros Clave",
+    "efficiency": "Mejora de Eficiencia",
+    "inventory": "Precisión de Inventario",
+    "safety": "Cumplimiento de Seguridad",
+    "team": "Miembros de Equipo Liderados"
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "items": {
+      "tlony": {
+        "name": "Sistema de Detección de Semáforos (TLoNY) · YOLOv8",
+        "context": "Visión por Computadora • Detección de Objetos",
+        "date": "2025",
+        "bullets": [
+          "Construí un pipeline de detección de semáforos con modelos YOLOv8 entrenados a medida",
+          "Recolecté y anoté imágenes de señales para mejorar el recall en condiciones de luz variadas",
+          "Empaqueté cuadernos reproducibles de entrenamiento e inferencia para acelerar la experimentación",
+          "Validé el desempeño de detección en tiempo real para escenarios de movilidad urbana más segura"
+        ],
+        "repo": "Ver repositorio"
+      }
+    }
+  }
+}
