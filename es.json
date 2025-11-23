@@ -156,7 +156,7 @@
   "gallery": {
     "title": "Galería en acción",
     "subtitle": "Momentos breves en video e imagen que muestran cómo llevo las ideas a resultados visibles.",
-    "open": "Ver en carrusel",
+    "open": "Ver imagen",
     "zoomHint": "Acerca para hacer zoom",
     "items": {
       "bodyDetection": {

@@ -156,7 +156,7 @@
   "gallery": {
     "title": "Action gallery",
     "subtitle": "Quick highlights that show how I turn ideas into visible outcomes.",
-    "open": "Open carousel",
+    "open": "View image",
     "zoomHint": "Pinch or scroll to zoom",
     "items": {
       "bodyDetection": {
