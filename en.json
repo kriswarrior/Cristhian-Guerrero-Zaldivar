@@ -152,5 +152,32 @@
     "inventory": "Inventory Accuracy",
     "safety": "Safety Compliance",
     "team": "Team Members Led"
+  },
+  "gallery": {
+    "title": "Action gallery",
+    "subtitle": "Quick video and photo highlights that show how I turn ideas into visible outcomes.",
+    "items": {
+      "visionDemo": {
+        "badge": "Video",
+        "title": "Computer vision demo",
+        "description": "Real-time detection paired with fast dashboards that surface the insights teams need most.",
+        "cta": "Watch demo",
+        "alt": "Thumbnail of a computer vision dashboard with a highlighted camera view"
+      },
+      "dashboard": {
+        "badge": "Photo",
+        "title": "In-store operations dashboard",
+        "description": "Inventory visibility and efficiency metrics to support on-the-spot decisions.",
+        "cta": "View details",
+        "alt": "Illustration of a dashboard with indicators and circular charts"
+      },
+      "leadership": {
+        "badge": "Video",
+        "title": "Team training capsule",
+        "description": "Micro coaching sessions that sharpen communication, safety, and response speed.",
+        "cta": "Play recap",
+        "alt": "Illustration of four people receiving coaching in front of charts"
+      }
+    }
   }
 }
