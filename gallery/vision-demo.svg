@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Demo de visión computacional">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="48" fill="url(#g1)"/>
+  <g fill="#0f172a" opacity="0.18">
+    <circle cx="320" cy="240" r="140" />
+    <circle cx="860" cy="540" r="180" />
+  </g>
+  <g fill="none" stroke="#0f172a" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <rect x="180" y="190" width="840" height="420" rx="42" ry="42" />
+    <circle cx="430" cy="380" r="70" />
+    <path d="M670 300h220M670 360h150M670 420h100" />
+  </g>
+  <text x="200" y="670" fill="#ffffff" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="66">Visión computacional en acción</text>
+  <text x="200" y="720" fill="#e0f2fe" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-weight="500" font-size="34">Monitoreo en tiempo real con superposición de hallazgos</text>
+</svg>

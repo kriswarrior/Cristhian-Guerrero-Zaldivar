@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Panel de operaciones en tienda">
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#667eea" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="48" fill="url(#g2)"/>
+  <g fill="none" stroke="#f8fafc" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <rect x="170" y="180" width="860" height="440" rx="32" ry="32" />
+    <path d="M260 520c120-80 180-80 300 0s180 80 300 0" />
+    <path d="M260 320h240m40 0h340M260 380h150m130 0h280M260 440h200m80 0h260" />
+  </g>
+  <g fill="#c4d4ff" opacity="0.85">
+    <circle cx="260" cy="260" r="24" />
+    <circle cx="420" cy="260" r="24" />
+    <circle cx="580" cy="260" r="24" />
+    <circle cx="740" cy="260" r="24" />
+    <circle cx="900" cy="260" r="24" />
+  </g>
+  <text x="200" y="670" fill="#f8fafc" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="66">Dashboard operativo inmediato</text>
+  <text x="200" y="720" fill="#e0e7ff" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-weight="500" font-size="34">Inventario y métricas listos para la siguiente decisión</text>
+</svg>
