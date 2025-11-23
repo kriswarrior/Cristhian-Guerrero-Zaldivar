@@ -1321,7 +1321,7 @@
             document.querySelectorAll('[data-i18n]').forEach((element) => {
                 const key = element.getAttribute('data-i18n');
                 const value = i18next.t(key);
-                if (value !== undefined) {
+                if (value && value !== key) {
                     element.textContent = value;
                 }
             });
@@ -1329,7 +1329,7 @@
             document.querySelectorAll('[data-i18n-alt]').forEach((element) => {
                 const key = element.getAttribute('data-i18n-alt');
                 const value = i18next.t(key);
-                if (value !== undefined) {
+                if (value && value !== key) {
                     element.setAttribute('alt', value);
                 }
             });
@@ -1339,7 +1339,9 @@
                 const flag = toggle.querySelector('.language-flag');
                 const code = toggle.querySelector('.language-code');
                 const ariaLabel = i18next.t('button.ariaLabel');
-                toggle.setAttribute('aria-label', ariaLabel || 'Change language');
+                if (ariaLabel && ariaLabel !== 'button.ariaLabel') {
+                    toggle.setAttribute('aria-label', ariaLabel);
+                }
                 if (flag && code) {
                     if (i18next.language === 'es') {
                         flag.textContent = '🇪🇸';
@@ -1352,35 +1354,35 @@
             }
 
             const title = i18next.t('head.title');
-            if (title) {
+            if (title && title !== 'head.title') {
                 document.title = title;
             }
 
             const description = i18next.t('head.description');
             const descriptionMeta = document.querySelector('meta[name="description"]');
-            if (description && descriptionMeta) {
+            if (description && description !== 'head.description' && descriptionMeta) {
                 descriptionMeta.setAttribute('content', description);
             }
 
             const ogTitle = i18next.t('head.ogTitle');
             const ogTitleMeta = document.querySelector('meta[property="og:title"]');
-            if (ogTitle && ogTitleMeta) {
+            if (ogTitle && ogTitle !== 'head.ogTitle' && ogTitleMeta) {
                 ogTitleMeta.setAttribute('content', ogTitle);
             }
 
             const ogDescription = i18next.t('head.ogDescription');
             const ogDescriptionMeta = document.querySelector('meta[property="og:description"]');
-            if (ogDescription && ogDescriptionMeta) {
+            if (ogDescription && ogDescription !== 'head.ogDescription' && ogDescriptionMeta) {
                 ogDescriptionMeta.setAttribute('content', ogDescription);
             }
 
             const twitterTitleMeta = document.querySelector('meta[name="twitter:title"]');
-            if (ogTitle && twitterTitleMeta) {
+            if (ogTitle && ogTitle !== 'head.ogTitle' && twitterTitleMeta) {
                 twitterTitleMeta.setAttribute('content', ogTitle);
             }
 
             const twitterDescriptionMeta = document.querySelector('meta[name="twitter:description"]');
-            if (description && twitterDescriptionMeta) {
+            if (description && description !== 'head.description' && twitterDescriptionMeta) {
                 twitterDescriptionMeta.setAttribute('content', description);
             }
         }
