@@ -559,6 +559,127 @@
             box-shadow: 0 25px 50px rgba(118, 75, 162, 0.25);
         }
 
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .media-card {
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(102, 126, 234, 0.18);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            position: relative;
+        }
+
+        .media-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 18px 45px rgba(118, 75, 162, 0.25);
+        }
+
+        .media-thumb {
+            position: relative;
+            height: 180px;
+            overflow: hidden;
+            isolation: isolate;
+        }
+
+        .media-thumb::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(12, 12, 12, 0.1) 0%, rgba(12, 12, 12, 0.45) 100%);
+            z-index: 1;
+        }
+
+        .media-thumb img,
+        .media-thumb video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .media-icon {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(4px);
+            color: white;
+            font-size: 1.1rem;
+            z-index: 2;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .media-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: rgba(0, 0, 0, 0.55);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            z-index: 2;
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .media-content {
+            padding: 18px 18px 22px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .media-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .media-description {
+            color: var(--text-secondary);
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .media-link {
+            align-self: flex-start;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #667eea;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 12px;
+            background: rgba(102, 126, 234, 0.12);
+            border: 1px solid rgba(102, 126, 234, 0.25);
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .media-link:hover {
+            background: rgba(102, 126, 234, 0.2);
+            transform: translateY(-1px);
+        }
+
         .project-card:hover::after {
             opacity: 1;
         }
@@ -1123,6 +1244,58 @@
                             <div style="font-size: 2rem; font-weight: 700; color: #8b5cf6;">15+</div>
                             <div style="color: #6b7280; font-size: 0.9rem;" data-i18n="achievements.team">Miembros de Equipo Liderados</div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title" data-i18n="gallery.title">Galería en acción</h2>
+                    <p class="section-subtitle" data-i18n="gallery.subtitle">Momentos breves en video e imagen que muestran cómo llevo las ideas a resultados visibles.</p>
+                    <div class="media-grid">
+                        <article class="media-card">
+                            <div class="media-thumb">
+                                <img src="gallery/vision-demo.svg" alt="" loading="lazy" data-i18n-alt="gallery.items.visionDemo.alt">
+                                <span class="media-badge" data-i18n="gallery.items.visionDemo.badge">Video</span>
+                                <span class="media-icon" aria-hidden="true"><i class="fas fa-play"></i></span>
+                            </div>
+                            <div class="media-content">
+                                <h3 class="media-title" data-i18n="gallery.items.visionDemo.title">Demo de visión computacional</h3>
+                                <p class="media-description" data-i18n="gallery.items.visionDemo.description">Detección en tiempo real y tableros rápidos que resumen hallazgos clave para el equipo.</p>
+                                <a class="media-link" href="https://www.youtube.com/watch?v=eRsGyueVLvQ" target="_blank" rel="noopener noreferrer" data-i18n="gallery.items.visionDemo.cta">
+                                    Ver demo
+                                    <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="media-card">
+                            <div class="media-thumb">
+                                <img src="gallery/dashboard.svg" alt="" loading="lazy" data-i18n-alt="gallery.items.dashboard.alt">
+                                <span class="media-badge" data-i18n="gallery.items.dashboard.badge">Foto</span>
+                                <span class="media-icon" aria-hidden="true"><i class="fas fa-camera"></i></span>
+                            </div>
+                            <div class="media-content">
+                                <h3 class="media-title" data-i18n="gallery.items.dashboard.title">Panel de operaciones en tienda</h3>
+                                <p class="media-description" data-i18n="gallery.items.dashboard.description">Visualización de inventario y métricas de eficiencia para tomar decisiones al vuelo.</p>
+                                <a class="media-link" href="https://kriswarrior.github.io/Efemerides-Wikimedia-Feed-API-esES/" target="_blank" rel="noopener noreferrer" data-i18n="gallery.items.dashboard.cta">
+                                    Explorar detalle
+                                    <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="media-card">
+                            <div class="media-thumb">
+                                <img src="gallery/leadership.svg" alt="" loading="lazy" data-i18n-alt="gallery.items.leadership.alt">
+                                <span class="media-badge" data-i18n="gallery.items.leadership.badge">Video</span>
+                                <span class="media-icon" aria-hidden="true"><i class="fas fa-play"></i></span>
+                            </div>
+                            <div class="media-content">
+                                <h3 class="media-title" data-i18n="gallery.items.leadership.title">Entrenamiento de equipo</h3>
+                                <p class="media-description" data-i18n="gallery.items.leadership.description">Micro-sesiones de coaching para mejorar comunicación, seguridad y velocidad de respuesta.</p>
+                                <a class="media-link" href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank" rel="noopener noreferrer" data-i18n="gallery.items.leadership.cta">
+                                    Ver cápsula
+                                    <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </main>

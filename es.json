@@ -152,5 +152,32 @@
     "inventory": "Precisión de Inventario",
     "safety": "Cumplimiento de Seguridad",
     "team": "Miembros de Equipo Liderados"
+  },
+  "gallery": {
+    "title": "Galería en acción",
+    "subtitle": "Momentos breves en video e imagen que muestran cómo llevo las ideas a resultados visibles.",
+    "items": {
+      "visionDemo": {
+        "badge": "Video",
+        "title": "Demo de visión computacional",
+        "description": "Detección en tiempo real y tableros rápidos que resumen hallazgos clave para el equipo.",
+        "cta": "Ver demo",
+        "alt": "Miniatura de un tablero de visión computacional con resaltado de cámara"
+      },
+      "dashboard": {
+        "badge": "Foto",
+        "title": "Panel de operaciones en tienda",
+        "description": "Visualización de inventario y métricas de eficiencia para tomar decisiones al vuelo.",
+        "cta": "Explorar detalle",
+        "alt": "Ilustración de dashboard con indicadores y gráficas circulares"
+      },
+      "leadership": {
+        "badge": "Video",
+        "title": "Entrenamiento de equipo",
+        "description": "Micro-sesiones de coaching para mejorar comunicación, seguridad y velocidad de respuesta.",
+        "cta": "Ver cápsula",
+        "alt": "Ilustración de cuatro personas recibiendo coaching frente a gráficas"
+      }
+    }
   }
 }
