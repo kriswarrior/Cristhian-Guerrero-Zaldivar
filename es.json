@@ -1,168 +1,155 @@
 {
   "head": {
-    "title": "Cristhian Guerrero Zaldívar | Líder de Operaciones · Ciberseguridad y Tecnología",
-    "description": "Perfil profesional de Cristhian Guerrero Zaldívar, líder en ciberseguridad y operaciones con experiencia en optimización de procesos, gestión de equipos y soluciones tecnológicas.",
-    "ogTitle": "Cristhian Guerrero Zaldívar | Líder de Operaciones · Ciberseguridad y Tecnología",
-    "ogDescription": "Perfil profesional de Cristhian Guerrero Zaldívar, líder en ciberseguridad y operaciones con experiencia en optimización de procesos, gestión de equipos y soluciones tecnológicas."
+    "title": "Cristhian Guerrero — Founder & CEO FlowMind Studio | Web + SEO + Conversion",
+    "description": "Portafolio de Cristhian Guerrero como founder: sistemas web full-stack, SEO local, optimización de conversión y crecimiento digital.",
+    "ogTitle": "Cristhian Guerrero — Founder & CEO FlowMind Studio | Web + SEO + Conversion",
+    "ogDescription": "Sistemas web + SEO + estrategia de conversión para negocios locales. Portafolio y trabajo actual de Cristhian Guerrero.",
+    "twitterTitle": "Cristhian Guerrero — Founder & CEO FlowMind Studio | Web + SEO + Conversion",
+    "twitterDescription": "Portafolio orientado a performance, SEO local y ejecución conversion-first."
   },
   "button": {
     "ariaLabel": "Cambiar idioma"
   },
-  "header": {
-    "profileAlt": "Retrato de Cristhian Guerrero Zaldívar",
-    "name": "Cristhian Guerrero Zaldívar",
-    "title": "Líder de Operaciones · Ciberseguridad y Tecnología",
-    "location": "Austin, TX"
+  "a11y": {
+    "skip": "Saltar al contenido principal"
   },
-  "sidebar": {
-    "coreSkillsTitle": "Habilidades Clave",
-    "coreSkills": {
-      "cybersecurity": "Ciberseguridad",
-      "teamLeadership": "Liderazgo de Equipos",
-      "operations": "Operaciones",
-      "processOptimization": "Optimización de Procesos"
+  "header": {
+    "profileAlt": "Retrato de Cristhian Guerrero",
+    "name": "Cristhian Guerrero Zaldívar",
+    "title": "Founder & CEO en FlowMind Studio LLC — Full-Stack / Web Systems / SEO & Conversion"
+  },
+  "links": {
+    "email": "Email",
+    "flowmind": "FlowMind Studio"
+  },
+  "now": {
+    "title": "Current Role / Now",
+    "intro": "Founder & CEO — FlowMind Studio LLC (Austin, TX). Construyo sitios conversion-first y sistemas de crecimiento para negocios locales.",
+    "description": "Lidero estrategia, ejecución y sistemas: sitios de conversión, landing pages para ads, optimización de Google Business Profile, performance técnico, CRO y automatizaciones ligeras para captura y seguimiento de leads."
+  },
+  "build": {
+    "title": "Lo que construyo ahora",
+    "items": [
+      {
+        "title": "Sitios de Conversión",
+        "body": "Websites multi-sección diseñados para convertir tráfico en leads calificados."
+      },
+      {
+        "title": "Landing Pages para Ads",
+        "body": "Páginas específicas por campaña con mensaje claro y CTAs medibles."
+      },
+      {
+        "title": "SEO Local + GBP",
+        "body": "Optimización de Google Business Profile, relevancia local y estrategia de reseñas."
+      },
+      {
+        "title": "Automatización de Leads",
+        "body": "Alertas, disparadores de follow-up y flujos listos para CRM."
+      },
+      {
+        "title": "Brand & Diseño Gráfico",
+        "body": "Logos, sistemas de identidad visual y activos de marca para canales digitales."
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre mí",
+    "body": "Tengo más de 10 años de experiencia entre tecnología, operaciones y liderazgo. Hoy me enfoco en crear sistemas web orientados a performance que conectan ingeniería, SEO y estrategia de conversión para generar resultados reales en pipeline e ingresos."
+  },
+  "services": {
+    "title": "Servicios",
+    "body": "Disponible para consultoría, auditorías y builds completos. Puedo integrarme desde estrategia hasta implementación y optimización."
+  },
+  "skills": {
+    "title": "Habilidades por categoría",
+    "web": {
+      "title": "Web Engineering",
+      "items": [
+        "HTML, CSS, JavaScript, PHP, React",
+        "Integraciones API, deployments, optimización de performance",
+        "Estructuras escalables para sitios de negocio"
+      ]
     },
-    "educationTitle": "Formación Académica",
-    "education": {
-      "degree1": "Licenciatura en Ciberseguridad e Informática",
-      "school1": "Universidad de Ciencias Informáticas",
-      "year1": "2021 - 2023 | La Habana, Cuba",
-      "degree2": "Licencia para Liderar y Operar",
-      "school2": "Walmart Academy",
-      "year2": "2025 | Texas, EE. UU."
+    "seo": {
+      "title": "SEO & Local Search",
+      "items": [
+        "SEO on-page + técnico",
+        "Optimización de Google Business Profile",
+        "Estrategia local de contenido y reseñas"
+      ]
     },
-    "languagesTitle": "Idiomas",
-    "languages": {
-      "spanish": "Español",
-      "native": "Nativo",
-      "english": "Inglés",
-      "advanced": "Avanzado",
-      "asl": "ASL",
-      "conversational": "Conversacional"
+    "marketing": {
+      "title": "Marketing & CRO",
+      "items": [
+        "Mensajería AIDA y arquitectura de CTAs",
+        "Funnels, framing de oferta y optimización de calidad de lead",
+        "Iteración guiada por analítica"
+      ]
     },
-    "certificationsTitle": "Certificaciones",
-    "certifications": {
-      "osha": "Certificación OSHA",
-      "foodSafety": "Seguridad Alimentaria",
-      "forklift": "Operador de Montacargas",
-      "heavyMachinery": "Maquinaria Pesada"
+    "design": {
+      "title": "Design",
+      "items": [
+        "UI/UX y jerarquía visual",
+        "Design systems y componentes reutilizables",
+        "Identidad de marca y activos gráficos"
+      ]
     },
-    "skillsTitle": "Habilidades",
-    "skills": {
-      "python": "Programación Avanzada en Python3",
-      "ethics": "Ética Profesional",
-      "problemSolving": "Resolución de Problemas",
-      "adaptability": "Adaptabilidad",
-      "communication": "Comunicación Efectiva",
-      "delegation": "Delegación Orientada a Objetivos",
-      "mentorship": "Mentoría de Equipos",
-      "decisionMaking": "Toma de Decisiones",
-      "flexibility": "Flexibilidad",
-      "emotionalIntelligence": "Inteligencia Emocional"
+    "ops": {
+      "title": "Ops / Automation",
+      "items": [
+        "Formularios y enrutamiento de leads",
+        "Alertas por WhatsApp y Slack",
+        "Workflows básicos de CRM y seguimiento"
+      ]
     }
   },
-  "summary": {
-    "description": "Profesional bilingüe en ciberseguridad con experiencia comprobada en liderazgo y una sólida base técnica. Especialista en gestión de equipos, excelencia operativa y protocolos de seguridad. Demuestra capacidad para optimizar procesos, garantizar el cumplimiento normativo y alcanzar resultados en entornos dinámicos. Combina la experiencia técnica con habilidades operativas prácticas para entregar resultados sobresalientes."
-  },
-  "projects": {
-    "title": "Proyectos destacados",
-    "subtitle": "Iniciativas tecnológicas donde aplico mis habilidades para crear soluciones centradas en las personas y el impacto.",
-    "items": {
-      "wikimedia": {
-        "title": "Efemérides Wikimedia Feed",
-        "description": "Aplicación web que consulta la API de Wikipedia para mostrar sucesos relevantes ocurridos en la fecha de nacimiento del usuario.",
-        "role": "Rol: Desarrollo end-to-end, diseño de la experiencia y optimización de rendimiento.",
-        "cta": "Probar proyecto"
+  "work": {
+    "title": "Featured Work",
+    "intro": "Demos y proyectos con enfoque conversion + SEO-ready.",
+    "items": [
+      {
+        "title": "Demo de Conversión FlowMind",
+        "body": "Layout para negocio local con framing de servicios, prueba social y CTA de reserva.",
+        "cta": "Abrir demo (URL placeholder)"
       },
-      "trafficLight": {
+      {
+        "title": "Efemérides Wikimedia Feed",
+        "body": "Aplicación web con API de Wikipedia para mostrar eventos relevantes por fecha con enfoque UX.",
+        "cta": "Ver proyecto"
+      },
+      {
         "title": "Modelo de Clasificación de Semáforos",
-        "description": "Modelo de visión computacional que clasifica estados de semáforos con aprendizaje por transferencia y aumentación de imágenes.",
-        "role": "Rol: Desarrollo del pipeline de entrenamiento, métricas de evaluación y cuaderno de inferencia listo para despliegue.",
+        "body": "Proyecto de visión computacional con transfer learning y pipeline de evaluación orientado a despliegue.",
         "cta": "Ver repositorio"
       }
-    }
+    ]
   },
-  "experience": {
-    "title": "Experiencia Profesional",
-    "roles": {
-      "overnight": {
-        "title": "Líder de Equipo - Operaciones Nocturnas",
-        "company": "Walmart Supercenter • Austin, TX",
-        "date": "Dic 2024 - Presente",
-        "bullets": [
-          "Dirigí un equipo nocturno de más de 8 asociados, optimizando la eficiencia del flujo de trabajo en un 15%",
-          "Mantuve el 100% de cumplimiento OSHA mediante formación rigurosa y seguimiento de seguridad",
-          "Operé montacargas certificados y maquinaria pesada sin incidentes de seguridad",
-          "Desarrollé un programa de rotación que mejoró la versatilidad del equipo y redujo tiempos muertos"
-        ]
+  "cred": {
+    "title": "Credibilidad",
+    "intro": "Resumen de impacto (highlights seleccionados).",
+    "metrics": [
+      {
+        "value": "10+ años",
+        "label": "Experiencia entre tecnología y operaciones"
       },
-      "freshFood": {
-        "title": "Asociado de Alimentos Frescos",
-        "company": "Walmart Supercenter • Las Vegas, NV",
-        "date": "Oct 2023 - Sep 2024",
-        "bullets": [
-          "Gestioné los departamentos de carnes y productos garantizando más del 99% de cumplimiento sanitario",
-          "Implementé controles de calidad que redujeron el desperdicio en un 30%",
-          "Capacité a nuevos asociados en protocolos de manipulación de alimentos y procedimientos de seguridad",
-          "Mantuve registros de temperatura e inventario con precisión constante"
-        ]
+      {
+        "value": "Decenas",
+        "label": "Sitios y proyectos de optimización"
       },
-      "houseman": {
-        "title": "Auxiliar de Operaciones Hoteleras",
-        "company": "Luxury Resort • Las Vegas, NV",
-        "date": "Mar 2023 - Oct 2023",
-        "bullets": [
-          "Brindé soporte operativo para servicios de hospitalidad de alta gama",
-          "Mantuve estándares excepcionales de servicio en un entorno de alta demanda",
-          "Coordiné con múltiples departamentos para asegurar experiencias fluidas a los huéspedes",
-          "Atendí eventos especiales y requerimientos de huéspedes VIP"
-        ]
-      },
-      "cybersecurity": {
-        "title": "Analista de Ciberseguridad",
-        "company": "NovaSec Solutions • La Habana, Cuba",
-        "date": "Jul 2021 – Ene 2023",
-        "bullets": [
-          "Monitoreé y respondí a amenazas y anomalías de red en sistemas críticos",
-          "Lideré evaluaciones internas de vulnerabilidades y coordiné los planes de remediación",
-          "Implementé políticas de acceso seguro para entornos de trabajo remoto",
-          "Colaboré con el departamento de TI para fortalecer la seguridad de endpoints"
-        ]
+      {
+        "value": "120+ clientes*",
+        "label": "Placeholder — confirma este claim antes de publicar"
       }
+    ]
+  },
+  "contact": {
+    "title": "Links y contacto",
+    "links": {
+      "flowmind": "FlowMind Studio (URL placeholder)",
+      "whatsapp": "WhatsApp (link placeholder)"
     }
   },
-  "technical": {
-    "title": "Experiencia Técnica",
-    "security": {
-      "title": "Seguridad y Cumplimiento",
-      "description": "Regulaciones OSHA, protocolos de seguridad, evaluación de riesgos, monitoreo de cumplimiento"
-    },
-    "operations": {
-      "title": "Gestión de Operaciones",
-      "description": "Control de inventario, optimización de procesos, aseguramiento de calidad, coordinación logística"
-    },
-    "leadership": {
-      "title": "Liderazgo y Capacitación",
-      "description": "Desarrollo de equipos, gestión del desempeño, programas de formación, resolución de conflictos"
-    }
-  },
-  "achievements": {
-    "title": "Logros Clave",
-    "efficiency": "Mejora de Eficiencia",
-    "inventory": "Precisión de Inventario",
-    "safety": "Cumplimiento de Seguridad",
-    "team": "Miembros de Equipo Liderados"
-  },
-  "gallery": {
-    "title": "Galería en acción",
-    "subtitle": "Momentos breves en video e imagen que muestran cómo llevo las ideas a resultados visibles.",
-    "open": "Ver imagen",
-    "zoomHint": "Acerca para hacer zoom",
-    "items": {
-      "bodyDetection": {
-        "description": "Detección corporal usando visión por ordenador",
-        "alt": "Visualización de detección corporal con marcadores en tiempo real"
-      }
-    }
+  "footer": {
+    "note": "© 2026 Cristhian Guerrero. Construido para velocidad, claridad y conversión."
   }
 }
