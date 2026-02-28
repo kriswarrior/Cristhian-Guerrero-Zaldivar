@@ -1,168 +1,155 @@
 {
   "head": {
-    "title": "Cristhian Guerrero Zaldívar | Operations Leader · Cybersecurity & Technology",
-    "description": "Professional profile of Cristhian Guerrero Zaldívar, a cybersecurity and operations leader with experience in process optimization, team management, and technology solutions.",
-    "ogTitle": "Cristhian Guerrero Zaldívar | Operations Leader · Cybersecurity & Technology",
-    "ogDescription": "Professional profile of Cristhian Guerrero Zaldívar, a cybersecurity and operations leader with experience in process optimization, team management, and technology solutions."
+    "title": "Cristhian Guerrero — Founder & CEO FlowMind Studio | Web + SEO + Conversion",
+    "description": "Founder-led portfolio of Cristhian Guerrero: Full-Stack web systems, local SEO, conversion optimization, and growth-focused digital experiences.",
+    "ogTitle": "Cristhian Guerrero — Founder & CEO FlowMind Studio | Web + SEO + Conversion",
+    "ogDescription": "Full-stack web systems + SEO + conversion strategy for local businesses. Portfolio and current work by Cristhian Guerrero.",
+    "twitterTitle": "Cristhian Guerrero — Founder & CEO FlowMind Studio | Web + SEO + Conversion",
+    "twitterDescription": "Founder-led web systems portfolio focused on performance, local SEO, and conversion-first execution."
   },
   "button": {
     "ariaLabel": "Switch language"
   },
-  "header": {
-    "profileAlt": "Portrait of Cristhian Guerrero Zaldívar",
-    "name": "Cristhian Guerrero Zaldívar",
-    "title": "Operations Leader · Cybersecurity & Technology",
-    "location": "Austin, TX"
+  "a11y": {
+    "skip": "Skip to main content"
   },
-  "sidebar": {
-    "coreSkillsTitle": "Core Skills",
-    "coreSkills": {
-      "cybersecurity": "Cybersecurity",
-      "teamLeadership": "Team Leadership",
-      "operations": "Operations",
-      "processOptimization": "Process Optimization"
+  "header": {
+    "profileAlt": "Portrait of Cristhian Guerrero",
+    "name": "Cristhian Guerrero Zaldívar",
+    "title": "Founder & CEO at FlowMind Studio LLC — Full-Stack / Web Systems / SEO & Conversion"
+  },
+  "links": {
+    "email": "Email",
+    "flowmind": "FlowMind Studio"
+  },
+  "now": {
+    "title": "Current Role / Now",
+    "intro": "Founder & CEO — FlowMind Studio LLC (Austin, TX). I build conversion-first websites and growth systems for local businesses.",
+    "description": "I lead strategy, execution, and systems: conversion websites, ad landing pages, Google Business Profile optimization, technical performance, CRO, and lightweight automations for lead handling and follow-up."
+  },
+  "build": {
+    "title": "What I build now",
+    "items": [
+      {
+        "title": "Conversion Websites",
+        "body": "Multi-section business websites designed to convert traffic into qualified leads."
+      },
+      {
+        "title": "Landing Pages for Ads",
+        "body": "Campaign-specific pages with clear messaging and measurable CTA flows."
+      },
+      {
+        "title": "Local SEO + GBP",
+        "body": "Google Business Profile optimization, local relevance signals, and review strategy."
+      },
+      {
+        "title": "Lead Automation",
+        "body": "Lead alerts, follow-up triggers, and lightweight CRM-ready workflows."
+      },
+      {
+        "title": "Brand & Graphic Design",
+        "body": "Logos, visual identity systems, and practical brand assets for digital channels."
+      }
+    ]
+  },
+  "about": {
+    "title": "About",
+    "body": "I bring 10+ years of experience across technology, operations, and leadership. Today my focus is building performance-driven web systems that connect engineering, SEO, and conversion strategy into outcomes local businesses can feel in pipeline and revenue."
+  },
+  "services": {
+    "title": "Services",
+    "body": "Available for consulting, audits, and full builds. I can join from strategy to implementation and optimization."
+  },
+  "skills": {
+    "title": "Skills by category",
+    "web": {
+      "title": "Web Engineering",
+      "items": [
+        "HTML, CSS, JavaScript, PHP, React",
+        "API integrations, deployments, performance tuning",
+        "Scalable structures for business websites"
+      ]
     },
-    "educationTitle": "Education",
-    "education": {
-      "degree1": "Bachelor's in Cybersecurity & IT",
-      "school1": "University of Informatics Sciences",
-      "year1": "2021 - 2023 | Havana, Cuba",
-      "degree2": "License to Lead & Operate",
-      "school2": "Walmart Academy",
-      "year2": "2025 | Texas, U.S."
+    "seo": {
+      "title": "SEO & Local Search",
+      "items": [
+        "On-page + technical SEO",
+        "Google Business Profile optimization",
+        "Local content and reviews strategy"
+      ]
     },
-    "languagesTitle": "Languages",
-    "languages": {
-      "spanish": "Spanish",
-      "native": "Native",
-      "english": "English",
-      "advanced": "Advanced",
-      "asl": "ASL",
-      "conversational": "Conversational"
+    "marketing": {
+      "title": "Marketing & CRO",
+      "items": [
+        "AIDA-driven messaging and CTA architecture",
+        "Funnels, offer framing, and lead quality optimization",
+        "Analytics-based iteration"
+      ]
     },
-    "certificationsTitle": "Certifications",
-    "certifications": {
-      "osha": "OSHA Certified",
-      "foodSafety": "Food Safety",
-      "forklift": "Forklift Operator",
-      "heavyMachinery": "Heavy Machinery"
+    "design": {
+      "title": "Design",
+      "items": [
+        "UI/UX and visual hierarchy",
+        "Design systems and reusable components",
+        "Brand identity and graphic assets"
+      ]
     },
-    "skillsTitle": "Skills",
-    "skills": {
-      "python": "Python3 Advanced Programming",
-      "ethics": "Professional Ethics",
-      "problemSolving": "Problem-solving",
-      "adaptability": "Adaptability",
-      "communication": "Effective Communication",
-      "delegation": "Goal-oriented Delegation",
-      "mentorship": "Team Mentorship",
-      "decisionMaking": "Decision-making",
-      "flexibility": "Flexibility",
-      "emotionalIntelligence": "Emotional Intelligence"
+    "ops": {
+      "title": "Ops / Automation",
+      "items": [
+        "Forms and lead routing",
+        "WhatsApp and Slack alerts",
+        "Basic CRM workflows and follow-up"
+      ]
     }
   },
-  "summary": {
-    "description": "Bilingual cybersecurity professional with proven leadership experience and strong technical foundation. Expertise in team management, operational excellence, and security protocols. Demonstrated ability to optimize processes, ensure compliance, and drive results in fast-paced environments. Combining technical expertise with practical operational skills to deliver exceptional outcomes."
-  },
-  "projects": {
-    "title": "Featured Projects",
-    "subtitle": "Technology initiatives where I apply my skills to craft people-first, high-impact solutions.",
-    "items": {
-      "wikimedia": {
-        "title": "Efemérides Wikimedia Feed",
-        "description": "Web app that queries the Wikipedia API to highlight notable events that happened on the user's birth date.",
-        "role": "Role: End-to-end development, experience design, and performance optimization.",
-        "cta": "Try the project"
+  "work": {
+    "title": "Featured Work",
+    "intro": "Selected demos and projects with a conversion + SEO-ready mindset.",
+    "items": [
+      {
+        "title": "FlowMind Conversion Demo",
+        "body": "High-intent local business layout with service framing, social proof, and booking CTA.",
+        "cta": "Open demo (placeholder URL)"
       },
-      "trafficLight": {
+      {
+        "title": "Efemérides Wikimedia Feed",
+        "body": "Web app using Wikipedia API to surface notable events by date with strong UX fundamentals.",
+        "cta": "View project"
+      },
+      {
         "title": "Traffic Light Classification Model",
-        "description": "Computer vision model that classifies traffic light states using transfer learning and image augmentation.",
-        "role": "Role: Built training pipeline, evaluation metrics, and deployment-ready inference notebook.",
+        "body": "Computer vision project with transfer learning and deployment-oriented evaluation pipeline.",
         "cta": "View repository"
       }
-    }
+    ]
   },
-  "experience": {
-    "title": "Professional Experience",
-    "roles": {
-      "overnight": {
-        "title": "Led a Team - Overnight Operations",
-        "company": "Walmart Supercenter • Austin, TX",
-        "date": "Dec 2024 - Present",
-        "bullets": [
-          "Lead overnight stocking team of 8+ associates, optimizing workflow efficiency by 15%",
-          "Maintain 100% OSHA compliance through rigorous safety training and enforcement",
-          "Operate certified forklift and heavy machinery with zero safety incidents",
-          "Developed cross-training program improving team versatility and reducing downtime"
-        ]
+  "cred": {
+    "title": "Credibility",
+    "intro": "Impact summary (selected highlights).",
+    "metrics": [
+      {
+        "value": "10+ years",
+        "label": "Experience across tech + operations"
       },
-      "freshFood": {
-        "title": "Fresh Food Associate",
-        "company": "Walmart Supercenter • Las Vegas, NV",
-        "date": "Oct 2023 - Sep 2024",
-        "bullets": [
-          "Managed meat and produce departments ensuring 99%+ food safety compliance",
-          "Implemented quality control measures reducing waste by 30%",
-          "Trained new associates on food handling protocols and safety procedures",
-          "Maintained temperature logs and inventory tracking systems"
-        ]
+      {
+        "value": "Dozens",
+        "label": "Web builds and optimization projects"
       },
-      "houseman": {
-        "title": "Houseman",
-        "company": "Luxury Resort • Las Vegas, NV",
-        "date": "Mar 2023 - Oct 2023",
-        "bullets": [
-          "Provided operational support for high-end hospitality operations",
-          "Maintained exceptional service standards in fast-paced environment",
-          "Coordinated with multiple departments to ensure seamless guest experiences",
-          "Handled special events and VIP guest requirements"
-        ]
-      },
-      "cybersecurity": {
-        "title": "Cybersecurity Analyst",
-        "company": "NovaSec Solutions • Havana, Cuba",
-        "date": "Jul 2021 – Jan 2023",
-        "bullets": [
-          "Monitored and responded to network threats and anomalies across critical systems",
-          "Led internal vulnerability assessments and coordinated remediation efforts",
-          "Implemented secure access policies for remote work environments",
-          "Collaborated with the IT department to enhance endpoint security architecture"
-        ]
+      {
+        "value": "120+ clients*",
+        "label": "Placeholder — confirm public claim before final publish"
       }
+    ]
+  },
+  "contact": {
+    "title": "Links & Contact",
+    "links": {
+      "flowmind": "FlowMind Studio (placeholder URL)",
+      "whatsapp": "WhatsApp (placeholder link)"
     }
   },
-  "technical": {
-    "title": "Technical Expertise",
-    "security": {
-      "title": "Security & Compliance",
-      "description": "OSHA regulations, safety protocols, risk assessment, compliance monitoring"
-    },
-    "operations": {
-      "title": "Operations Management",
-      "description": "Inventory control, process optimization, quality assurance, logistics coordination"
-    },
-    "leadership": {
-      "title": "Leadership & Training",
-      "description": "Team development, performance management, training programs, conflict resolution"
-    }
-  },
-  "achievements": {
-    "title": "Key Achievements",
-    "efficiency": "Efficiency Improvement",
-    "inventory": "Inventory Accuracy",
-    "safety": "Safety Compliance",
-    "team": "Team Members Led"
-  },
-  "gallery": {
-    "title": "Action gallery",
-    "subtitle": "Quick highlights that show how I turn ideas into visible outcomes.",
-    "open": "View image",
-    "zoomHint": "Pinch or scroll to zoom",
-    "items": {
-      "bodyDetection": {
-        "description": "Body detection using computer vision",
-        "alt": "Body detection visualization with live markers"
-      }
-    }
+  "footer": {
+    "note": "© 2026 Cristhian Guerrero. Built for speed, clarity, and conversion."
   }
 }
