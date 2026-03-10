@@ -1,14 +1,11 @@
 {
   "head": {
-    "title": "Cristhian Guerrero — Founder & CEO FlowMind Studio | Web + SEO + Conversion",
-    "description": "Founder-led portfolio of Cristhian Guerrero: Full-Stack web systems, local SEO, conversion optimization, and growth-focused digital experiences.",
-    "ogTitle": "Cristhian Guerrero — Founder & CEO FlowMind Studio | Web + SEO + Conversion",
-    "ogDescription": "Full-stack web systems + SEO + conversion strategy for local businesses. Portfolio and current work by Cristhian Guerrero.",
-    "twitterTitle": "Cristhian Guerrero — Founder & CEO FlowMind Studio | Web + SEO + Conversion",
-    "twitterDescription": "Founder-led web systems portfolio focused on performance, local SEO, and conversion-first execution."
-  },
-  "button": {
-    "ariaLabel": "Switch language"
+    "title": "Cristhian Guerrero Zaldívar | Founder, Web Developer, Software & AI Solutions",
+    "description": "Premium portfolio and services of Cristhian Guerrero Zaldívar, founder of FlowMind Studio LLC. Web development, software, automation, and AI solutions.",
+    "ogTitle": "Cristhian Guerrero Zaldívar | Founder, Web Developer, Software & AI Solutions",
+    "ogDescription": "I build premium websites, software, and intelligent systems for businesses that want growth with clarity.",
+    "twitterTitle": "Cristhian Guerrero Zaldívar | Founder, Web Developer, Software & AI Solutions",
+    "twitterDescription": "Founder of FlowMind Studio LLC. Premium websites, software, automation, and AI solutions."
   },
   "a11y": {
     "skip": "Skip to main content"
@@ -19,37 +16,50 @@
     "title": "Founder & CEO at FlowMind Studio LLC — Artistic Web Systems, Code, Design & Conversion",
     "kicker": "Artistic Web Architect · Founder-led Studio"
   },
-  "links": {
-    "email": "Email",
-    "flowmind": "FlowMind Studio"
+  "hero": {
+    "eyebrow": "Web Development · Software · Automation · AI",
+    "name": "Cristhian Guerrero Zaldívar",
+    "subtitle": "I build premium websites, software, and intelligent systems that look impressive, run fast, and help businesses grow.",
+    "description": "I'm the founder of FlowMind Studio LLC. I create digital solutions that combine strong design, solid development, and business thinking. I don't just build what looks good — I build what works and creates real value.",
+    "ctaPrimary": "Let's work together",
+    "ctaSecondary": "View projects",
+    "ctaTertiary": "Download CV",
+    "sticker": "Founder of FlowMind Studio LLC · Austin, TX",
+    "profileAlt": "Portrait of Cristhian Guerrero",
+    "stats": {
+      "one": "years of hands-on experience",
+      "two": "digital builds, improvements, and systems",
+      "three": "core areas: web, software, automation, and AI"
+    }
   },
   "now": {
     "title": "Current Role / Now",
     "intro": "Founder & CEO — FlowMind Studio LLC (Austin, TX). I design and build premium artistic websites that merge creative direction, engineering, and business growth.",
     "description": "I lead strategy, execution, and systems: conversion websites, ad landing pages, Google Business Profile optimization, technical performance, CRO, and lightweight automations for lead handling and follow-up."
   },
-  "build": {
-    "title": "What I build now",
+  "services": {
+    "title": "What I Do",
+    "intro": "I help businesses, brands, and founders turn ideas into polished digital products that look strong, feel professional, and are built to perform.",
     "items": [
       {
-        "title": "Conversion Websites",
-        "body": "Multi-section business websites designed to convert traffic into qualified leads."
+        "title": "Premium Websites",
+        "body": "Modern, high-converting websites built to create trust, communicate clearly, and generate better business opportunities."
       },
       {
-        "title": "Landing Pages for Ads",
-        "body": "Campaign-specific pages with clear messaging and measurable CTA flows."
+        "title": "Custom Software",
+        "body": "Tailored digital tools designed to solve real workflows, organize information, and improve how a business operates."
       },
       {
-        "title": "Local SEO + GBP",
-        "body": "Google Business Profile optimization, local relevance signals, and review strategy."
+        "title": "Automation & AI",
+        "body": "Smart systems that save time, reduce repetitive work, and add intelligent functionality to digital processes."
       },
       {
-        "title": "Lead Automation",
-        "body": "Lead alerts, follow-up triggers, and lightweight CRM-ready workflows."
+        "title": "Optimization & Redesign",
+        "body": "Improvements for existing websites or systems to make them clearer, faster, more modern, and more effective."
       },
       {
-        "title": "Brand & Graphic Design",
-        "body": "Logos, visual identity systems, and practical brand assets for digital channels."
+        "title": "Digital Presence & Brand Experience",
+        "body": "A stronger online presence through better structure, visuals, messaging, and presentation."
       }
     ]
   },
@@ -63,89 +73,136 @@
     "body": "Available for consulting, audits, and full builds. I can join from strategy to implementation and optimization."
   },
   "skills": {
-    "title": "Skills by category",
-    "web": {
-      "title": "Web Engineering",
-      "items": [
-        "HTML, CSS, JavaScript, PHP, React",
-        "API integrations, deployments, performance tuning",
-        "Scalable structures for business websites"
-      ]
-    },
-    "seo": {
-      "title": "SEO & Local Search",
-      "items": [
-        "On-page + technical SEO",
-        "Google Business Profile optimization",
-        "Local content and reviews strategy"
-      ]
-    },
-    "marketing": {
-      "title": "Marketing & CRO",
-      "items": [
-        "AIDA-driven messaging and CTA architecture",
-        "Funnels, offer framing, and lead quality optimization",
-        "Analytics-based iteration"
-      ]
-    },
-    "design": {
-      "title": "Design",
-      "items": [
-        "UI/UX and visual hierarchy",
-        "Design systems and reusable components",
-        "Brand identity and graphic assets"
-      ]
-    },
-    "ops": {
-      "title": "Ops / Automation",
-      "items": [
-        "Forms and lead routing",
-        "WhatsApp and Slack alerts",
-        "Basic CRM workflows and follow-up"
-      ]
-    }
+    "title": "Skills",
+    "items": [
+      {
+        "title": "Web Development",
+        "body": "Modern websites, responsive interfaces, frontend architecture, performance optimization, UI implementation, and integrations."
+      },
+      {
+        "title": "Software & Systems",
+        "body": "Custom tools, digital workflows, dashboards, structured solutions, and problem-solving systems."
+      },
+      {
+        "title": "Automation & AI",
+        "body": "AI-assisted flows, process automation, smart interactions, classification logic, and efficiency-driven solutions."
+      },
+      {
+        "title": "Design & UX",
+        "body": "Clear interfaces, visual hierarchy, polished user experience, and branding-aware digital design."
+      },
+      {
+        "title": "SEO & Digital Visibility",
+        "body": "On-page structure, technical improvements, discoverability, local presence, and trust-building digital foundations."
+      },
+      {
+        "title": "Strategy & Conversion",
+        "body": "Clear offers, stronger calls to action, better user journeys, and conversion-oriented decision making."
+      }
+    ]
   },
-  "work": {
-    "title": "Featured Work",
-    "intro": "Selected demos and projects with a conversion + SEO-ready mindset.",
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "date": "Present · Austin, Texas",
+        "role": "Founder & CEO — FlowMind Studio LLC",
+        "body": "I lead a creative and technical studio focused on building premium digital experiences with strong visual identity and business intent.",
+        "points": [
+          "Build high-end websites for brands and local businesses",
+          "Create conversion-focused landing pages",
+          "Develop digital systems and smart automations",
+          "Improve presentation, clarity, and online positioning",
+          "Turn ideas into polished, real-world products"
+        ]
+      },
+      {
+        "date": "Independent Consultant",
+        "role": "Technology & Product Consultant",
+        "body": "I've worked across diverse digital projects helping improve structure, clarity, functionality, and execution quality.",
+        "points": [
+          "Turn vague ideas into clear digital products",
+          "Improve outdated or confusing interfaces",
+          "Create stronger user flows and visual communication",
+          "Bring practical solutions without unnecessary complexity"
+        ]
+      },
+      {
+        "date": "Cross-functional background",
+        "role": "Operations, Leadership & Execution",
+        "body": "My background also includes real-world experience in organization, process improvement, and coordination, which helps me execute with perspective and consistency."
+      }
+    ]
+  },
+  "why": {
+    "title": "Why Work With Me",
+    "intro": "I bring together design, development, strategy, and execution in a way that strengthens projects from every angle.",
+    "points": [
+      "I understand both the visual and technical side",
+      "I focus on results, not just aesthetics",
+      "I can build from scratch or improve what already exists",
+      "I adapt to different scopes, from websites to software and AI ideas",
+      "I care about quality, clarity, and long-term value"
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "intro": "A selection of projects and concepts where design, logic, user experience, and strategy come together.",
     "items": [
       {
         "title": "FlowMind Conversion Demo",
-        "body": "High-intent local business layout with service framing, social proof, and booking CTA.",
-        "cta": "Open demo (placeholder URL)"
+        "body": "A high-impact business website concept designed to present services clearly, build trust, and drive action.",
+        "cta": "View demo"
       },
       {
-        "title": "Efemérides Wikimedia Feed",
-        "body": "Web app using Wikipedia API to surface notable events by date with strong UX fundamentals.",
-        "cta": "View project"
+        "title": "Historical Events API App",
+        "body": "A web app connected to live data, designed to present useful information in a clean and engaging way.",
+        "cta": "View repository"
       },
       {
         "title": "Traffic Light Classification Model",
-        "body": "Computer vision project with transfer learning and deployment-oriented evaluation pipeline.",
+        "body": "A computer vision project focused on image classification, evaluation, and applied AI experimentation.",
         "cta": "View repository"
+      },
+      {
+        "title": "Brand & Business Websites",
+        "body": "Custom web experiences designed to make brands look stronger, communicate clearly, and convert better.",
+        "cta": "View project"
       }
     ]
   },
-  "cred": {
-    "title": "Credibility",
-    "intro": "Impact summary (selected highlights).",
-    "metrics": [
-      {
-        "value": "10+ years",
-        "label": "Experience across tech + operations"
-      },
-      {
-        "value": "Dozens",
-        "label": "Web builds and optimization projects"
-      },
-      {
-        "value": "120+ clients*",
-        "label": "Placeholder — confirm public claim before final publish"
-      }
+  "results": {
+    "title": "What I Aim to Create",
+    "body": "A digital product should do more than exist. It should help a business communicate better, look stronger, create trust, reduce friction, and open the door to growth.",
+    "points": [
+      "A more professional presence",
+      "Clearer communication of value",
+      "Better user experience",
+      "Stronger trust and credibility",
+      "More efficient processes",
+      "Smarter digital growth"
+    ]
+  },
+  "education": {
+    "title": "Education & Continuous Growth",
+    "body": "My growth has been practical, self-directed, and deeply project-based. I've built my skills through real execution, experimentation, design iteration, and constant learning across web development, software, UX, automation, AI, and digital strategy."
+  },
+  "workflow": {
+    "title": "How I Work",
+    "body": "I work with clarity, intention, and strong attention to detail. First I align on the real objective, then I shape a solution that makes sense visually, technically, and strategically.",
+    "points": [
+      "I listen carefully",
+      "I propose with intention",
+      "I build with quality",
+      "I refine the details",
+      "I deliver with purpose"
     ]
   },
   "contact": {
-    "title": "Links & Contact",
+    "title": "Let's Build Something Great",
+    "body": "If you're looking for someone who can combine design, development, systems thinking, and execution, I'd be glad to hear about your project.",
+    "support": "Whether you need a premium website, a digital tool, an automation, a redesign, or an AI-powered idea brought to life, I can help turn it into something real.",
+    "cta": "Let's talk",
     "links": {
       "flowmind": "FlowMind Studio (placeholder URL)",
       "whatsapp": "WhatsApp (placeholder link)"

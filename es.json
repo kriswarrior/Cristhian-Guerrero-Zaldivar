@@ -1,14 +1,11 @@
 {
   "head": {
-    "title": "Cristhian Guerrero — Founder & CEO FlowMind Studio | Web + SEO + Conversion",
-    "description": "Portafolio de Cristhian Guerrero como founder: sistemas web full-stack, SEO local, optimización de conversión y crecimiento digital.",
-    "ogTitle": "Cristhian Guerrero — Founder & CEO FlowMind Studio | Web + SEO + Conversion",
-    "ogDescription": "Sistemas web + SEO + estrategia de conversión para negocios locales. Portafolio y trabajo actual de Cristhian Guerrero.",
-    "twitterTitle": "Cristhian Guerrero — Founder & CEO FlowMind Studio | Web + SEO + Conversion",
-    "twitterDescription": "Portafolio orientado a performance, SEO local y ejecución conversion-first."
-  },
-  "button": {
-    "ariaLabel": "Cambiar idioma"
+    "title": "Cristhian Guerrero Zaldívar | Founder, Desarrollo Web, Software e IA",
+    "description": "Portfolio y servicios premium de Cristhian Guerrero Zaldívar, fundador de FlowMind Studio LLC. Desarrollo web, software, automatización y soluciones con IA.",
+    "ogTitle": "Cristhian Guerrero Zaldívar | Founder, Desarrollo Web, Software e IA",
+    "ogDescription": "Construyo websites premium, software y sistemas inteligentes para negocios que quieren crecer con claridad.",
+    "twitterTitle": "Cristhian Guerrero Zaldívar | Founder, Desarrollo Web, Software e IA",
+    "twitterDescription": "Founder de FlowMind Studio LLC. Websites premium, software, automatización y soluciones con IA."
   },
   "a11y": {
     "skip": "Saltar al contenido principal"
@@ -19,37 +16,50 @@
     "title": "Founder & CEO en FlowMind Studio LLC — Web Systems Artísticos, Código, Diseño y Conversión",
     "kicker": "Arquitecto Web Artístico · Estudio liderado por founder"
   },
-  "links": {
-    "email": "Email",
-    "flowmind": "FlowMind Studio"
+  "hero": {
+    "eyebrow": "Desarrollo Web · Software · Automatización · IA",
+    "name": "Cristhian Guerrero Zaldívar",
+    "subtitle": "Construyo websites, software y sistemas inteligentes que se ven premium, funcionan rápido y ayudan a crecer.",
+    "description": "Soy fundador de FlowMind Studio LLC. Creo soluciones digitales que combinan diseño atractivo, desarrollo sólido y visión de negocio. No me enfoco solo en que algo se vea bien: me enfoco en que funcione y genere valor real.",
+    "ctaPrimary": "Trabajemos juntos",
+    "ctaSecondary": "Ver proyectos",
+    "ctaTertiary": "Descargar CV",
+    "sticker": "Founder de FlowMind Studio LLC · Austin, Texas",
+    "profileAlt": "Retrato de Cristhian Guerrero",
+    "stats": {
+      "one": "años de experiencia práctica",
+      "two": "proyectos, mejoras y sistemas digitales",
+      "three": "áreas clave: web, software, automatización e IA"
+    }
   },
   "now": {
     "title": "Current Role / Now",
     "intro": "Founder & CEO — FlowMind Studio LLC (Austin, TX). Diseño y construyo websites premium con estilo artístico que unen dirección creativa, ingeniería y crecimiento de negocio.",
     "description": "Lidero estrategia, ejecución y sistemas: sitios de conversión, landing pages para ads, optimización de Google Business Profile, performance técnico, CRO y automatizaciones ligeras para captura y seguimiento de leads."
   },
-  "build": {
-    "title": "Lo que construyo ahora",
+  "services": {
+    "title": "Lo que puedo hacer",
+    "intro": "Ayudo a negocios, marcas y emprendedores a convertir ideas en productos digitales bien construidos, visualmente potentes y listos para crecer.",
     "items": [
       {
-        "title": "Sitios de Conversión",
-        "body": "Websites multi-sección diseñados para convertir tráfico en leads calificados."
+        "title": "Websites premium",
+        "body": "Sitios modernos y bien pensados para generar confianza, explicar mejor el valor del negocio y convertir visitas en oportunidades."
       },
       {
-        "title": "Landing Pages para Ads",
-        "body": "Páginas específicas por campaña con mensaje claro y CTAs medibles."
+        "title": "Software a medida",
+        "body": "Herramientas personalizadas para resolver procesos reales, organizar información y mejorar la operación del negocio."
       },
       {
-        "title": "SEO Local + GBP",
-        "body": "Optimización de Google Business Profile, relevancia local y estrategia de reseñas."
+        "title": "Automatización e IA",
+        "body": "Sistemas inteligentes que ahorran tiempo, reducen tareas repetitivas y aportan más capacidad a los procesos digitales."
       },
       {
-        "title": "Automatización de Leads",
-        "body": "Alertas, disparadores de follow-up y flujos listos para CRM."
+        "title": "Optimización y rediseño",
+        "body": "Mejoras para sitios o sistemas existentes con el fin de hacerlos más claros, rápidos, modernos y efectivos."
       },
       {
-        "title": "Brand & Diseño Gráfico",
-        "body": "Logos, sistemas de identidad visual y activos de marca para canales digitales."
+        "title": "Presencia digital y experiencia de marca",
+        "body": "Una presencia online más fuerte gracias a mejor estructura, mejor imagen, mejor mensaje y mejor presentación."
       }
     ]
   },
@@ -63,89 +73,136 @@
     "body": "Disponible para consultoría, auditorías y builds completos. Puedo integrarme desde estrategia hasta implementación y optimización."
   },
   "skills": {
-    "title": "Habilidades por categoría",
-    "web": {
-      "title": "Web Engineering",
-      "items": [
-        "HTML, CSS, JavaScript, PHP, React",
-        "Integraciones API, deployments, optimización de performance",
-        "Estructuras escalables para sitios de negocio"
-      ]
-    },
-    "seo": {
-      "title": "SEO & Local Search",
-      "items": [
-        "SEO on-page + técnico",
-        "Optimización de Google Business Profile",
-        "Estrategia local de contenido y reseñas"
-      ]
-    },
-    "marketing": {
-      "title": "Marketing & CRO",
-      "items": [
-        "Mensajería AIDA y arquitectura de CTAs",
-        "Funnels, framing de oferta y optimización de calidad de lead",
-        "Iteración guiada por analítica"
-      ]
-    },
-    "design": {
-      "title": "Design",
-      "items": [
-        "UI/UX y jerarquía visual",
-        "Design systems y componentes reutilizables",
-        "Identidad de marca y activos gráficos"
-      ]
-    },
-    "ops": {
-      "title": "Ops / Automation",
-      "items": [
-        "Formularios y enrutamiento de leads",
-        "Alertas por WhatsApp y Slack",
-        "Workflows básicos de CRM y seguimiento"
-      ]
-    }
-  },
-  "work": {
-    "title": "Featured Work",
-    "intro": "Demos y proyectos con enfoque conversion + SEO-ready.",
+    "title": "Habilidades",
     "items": [
       {
-        "title": "Demo de Conversión FlowMind",
-        "body": "Layout para negocio local con framing de servicios, prueba social y CTA de reserva.",
-        "cta": "Abrir demo (URL placeholder)"
+        "title": "Desarrollo web",
+        "body": "Sitios modernos, interfaces responsive, estructura frontend, optimización de rendimiento, implementación visual e integraciones."
       },
       {
-        "title": "Efemérides Wikimedia Feed",
-        "body": "Aplicación web con API de Wikipedia para mostrar eventos relevantes por fecha con enfoque UX.",
-        "cta": "Ver proyecto"
+        "title": "Software y sistemas",
+        "body": "Herramientas personalizadas, flujos digitales, dashboards, soluciones estructuradas y sistemas orientados a resolver problemas."
       },
       {
-        "title": "Modelo de Clasificación de Semáforos",
-        "body": "Proyecto de visión computacional con transfer learning y pipeline de evaluación orientado a despliegue.",
-        "cta": "Ver repositorio"
+        "title": "Automatización e IA",
+        "body": "Flujos asistidos por IA, automatización de procesos, interacciones inteligentes y soluciones enfocadas en eficiencia."
+      },
+      {
+        "title": "Diseño y experiencia de usuario",
+        "body": "Interfaces claras, jerarquía visual, experiencia pulida y diseño digital con sensibilidad de marca."
+      },
+      {
+        "title": "SEO y visibilidad digital",
+        "body": "Estructura on-page, mejoras técnicas, capacidad de descubrimiento y bases digitales que transmiten confianza."
+      },
+      {
+        "title": "Estrategia y conversión",
+        "body": "Ofertas claras, mejores llamados a la acción, recorridos más inteligentes y pensamiento orientado a conversión."
       }
     ]
   },
-  "cred": {
-    "title": "Credibilidad",
-    "intro": "Resumen de impacto (highlights seleccionados).",
-    "metrics": [
+  "experience": {
+    "title": "Experiencia",
+    "items": [
       {
-        "value": "10+ años",
-        "label": "Experiencia entre tecnología y operaciones"
+        "date": "Actualidad · Austin, Texas",
+        "role": "Founder & CEO — FlowMind Studio LLC",
+        "body": "Lidero un estudio creativo y tecnológico enfocado en construir experiencias digitales premium con identidad visual fuerte y enfoque comercial.",
+        "points": [
+          "Desarrollo websites de alto nivel para marcas y negocios",
+          "Creo landing pages enfocadas en conversión",
+          "Construyo sistemas digitales y automatizaciones inteligentes",
+          "Mejoro presentación, claridad y presencia online",
+          "Transformo ideas en productos reales y bien terminados"
+        ]
       },
       {
-        "value": "Decenas",
-        "label": "Sitios y proyectos de optimización"
+        "date": "Consultoría independiente",
+        "role": "Consultor en tecnología y producto",
+        "body": "He trabajado en distintos proyectos digitales ayudando a mejorar estructura, claridad, experiencia, funcionalidad y ejecución.",
+        "points": [
+          "Convierto ideas vagas en productos digitales claros",
+          "Mejoro interfaces antiguas o confusas",
+          "Creo mejores recorridos de usuario y comunicación visual",
+          "Propongo soluciones prácticas sin complejidad innecesaria"
+        ]
       },
       {
-        "value": "120+ clientes*",
-        "label": "Placeholder — confirma este claim antes de publicar"
+        "date": "Trayectoria transversal",
+        "role": "Operaciones, liderazgo y ejecución",
+        "body": "También tengo experiencia real en organización, mejora de procesos y coordinación. Eso me permite abordar proyectos con más visión y una ejecución más sólida."
       }
+    ]
+  },
+  "why": {
+    "title": "Por qué trabajar conmigo",
+    "intro": "Combino diseño, desarrollo, estrategia y ejecución de una forma que hace que los proyectos se sientan más sólidos desde todos los ángulos.",
+    "points": [
+      "Entiendo tanto la parte visual como la técnica",
+      "Pienso en resultados, no solo en estética",
+      "Puedo construir desde cero o mejorar lo que ya existe",
+      "Me adapto a distintos tipos de proyecto, desde websites hasta software e ideas con IA",
+      "Me importa la calidad, la claridad y el valor a largo plazo"
+    ]
+  },
+  "projects": {
+    "title": "Proyectos destacados",
+    "intro": "Una selección de proyectos y conceptos donde se unen diseño, lógica, experiencia de usuario y estrategia.",
+    "items": [
+      {
+        "title": "FlowMind Conversion Demo",
+        "body": "Concepto de website de alto impacto para negocio, pensado para presentar servicios con claridad, generar confianza y llevar al usuario a la acción.",
+        "cta": "Ver demo"
+      },
+      {
+        "title": "App de efemérides con API",
+        "body": "Aplicación web conectada a datos en tiempo real, diseñada para mostrar información útil de forma clara y atractiva.",
+        "cta": "Ver repositorio"
+      },
+      {
+        "title": "Modelo de clasificación de semáforos",
+        "body": "Proyecto de visión computacional enfocado en clasificación de imágenes, evaluación y experimentación aplicada con IA.",
+        "cta": "Ver repositorio"
+      },
+      {
+        "title": "Websites para marcas y negocios",
+        "body": "Experiencias web personalizadas creadas para mejorar imagen, comunicación y conversión.",
+        "cta": "Ver proyecto"
+      }
+    ]
+  },
+  "results": {
+    "title": "Lo que busco lograr",
+    "body": "Un producto digital debería hacer más que existir. Debería ayudar a un negocio a comunicar mejor, verse más fuerte, generar confianza, reducir fricción y abrir la puerta al crecimiento.",
+    "points": [
+      "Una presencia más profesional",
+      "Una comunicación más clara del valor del negocio",
+      "Mejor experiencia de usuario",
+      "Más confianza y credibilidad",
+      "Procesos más eficientes",
+      "Crecimiento digital más inteligente"
+    ]
+  },
+  "education": {
+    "title": "Formación y evolución profesional",
+    "body": "Mi crecimiento ha sido práctico, autodirigido y basado en proyectos reales. He desarrollado mis habilidades con ejecución real, experimentación, iteración de diseño y aprendizaje constante en desarrollo web, software, UX, automatización, IA y estrategia digital."
+  },
+  "workflow": {
+    "title": "Cómo trabajo",
+    "body": "Me gusta trabajar con claridad, criterio y atención al detalle. Primero entiendo el objetivo real del proyecto y luego propongo una solución que tenga sentido visual, técnico y estratégico.",
+    "points": [
+      "Escucho bien",
+      "Propongo con criterio",
+      "Construyo con calidad",
+      "Cuido los detalles",
+      "Entrego con propósito"
     ]
   },
   "contact": {
-    "title": "Links y contacto",
+    "title": "Hablemos de tu próximo proyecto",
+    "body": "Si buscas a alguien que pueda combinar diseño, desarrollo, sistemas y ejecución real, estaré encantado de conocer tu idea.",
+    "support": "Ya sea que necesites una web premium, una herramienta digital, una automatización, un rediseño o una idea impulsada por IA, puedo ayudarte a convertirla en algo real.",
+    "cta": "Hablemos",
     "links": {
       "flowmind": "FlowMind Studio (URL placeholder)",
       "whatsapp": "WhatsApp (link placeholder)"
