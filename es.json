@@ -16,7 +16,8 @@
   "header": {
     "profileAlt": "Retrato de Cristhian Guerrero",
     "name": "Cristhian Guerrero Zaldívar",
-    "title": "Founder & CEO en FlowMind Studio LLC — Full-Stack / Web Systems / SEO & Conversion"
+    "title": "Founder & CEO en FlowMind Studio LLC — Web Systems Artísticos, Código, Diseño y Conversión",
+    "kicker": "Arquitecto Web Artístico · Estudio liderado por founder"
   },
   "links": {
     "email": "Email",
@@ -24,7 +25,7 @@
   },
   "now": {
     "title": "Current Role / Now",
-    "intro": "Founder & CEO — FlowMind Studio LLC (Austin, TX). Construyo sitios conversion-first y sistemas de crecimiento para negocios locales.",
+    "intro": "Founder & CEO — FlowMind Studio LLC (Austin, TX). Diseño y construyo websites premium con estilo artístico que unen dirección creativa, ingeniería y crecimiento de negocio.",
     "description": "Lidero estrategia, ejecución y sistemas: sitios de conversión, landing pages para ads, optimización de Google Business Profile, performance técnico, CRO y automatizaciones ligeras para captura y seguimiento de leads."
   },
   "build": {
@@ -54,7 +55,8 @@
   },
   "about": {
     "title": "Sobre mí",
-    "body": "Tengo más de 10 años de experiencia entre tecnología, operaciones y liderazgo. Hoy me enfoco en crear sistemas web orientados a performance que conectan ingeniería, SEO y estrategia de conversión para generar resultados reales en pipeline e ingresos."
+    "body": "Aporto más de 10 años de experiencia entre tecnología, operaciones y liderazgo. Creo experiencias web vivas donde storytelling visual, performance y estrategia de conversión trabajan juntos para generar crecimiento real en pipeline e ingresos.",
+    "tag": "Tecnólogo creativo · estrategia + ejecución"
   },
   "services": {
     "title": "Servicios",
@@ -147,9 +149,74 @@
     "links": {
       "flowmind": "FlowMind Studio (URL placeholder)",
       "whatsapp": "WhatsApp (link placeholder)"
-    }
+    },
+    "pitch": "Disponible para colaboraciones estratégicas, consultoría y desarrollo web orientado a conversión."
   },
   "footer": {
     "note": "© 2026 Cristhian Guerrero. Construido para velocidad, claridad y conversión."
+  },
+  "positioning": {
+    "title": "Blueprint de Posicionamiento CEO",
+    "intro": "Una estructura premium de marca personal que se ve de alto nivel, sin humo y con pruebas reales.",
+    "pillars": {
+      "title": "Cuatro pilares para verte top-tier",
+      "items": [
+        "Frase de autoridad: una línea que define a quién ayudas, cómo y con qué resultado medible.",
+        "Muro de pruebas: logros seleccionados con contexto, números y tu rol exacto en cada resultado.",
+        "Narrativa CEO: cronología corta de operador → estratega → founder.",
+        "CTA potente: flujo directo para agendar estrategia, alianzas u oportunidades clave."
+      ]
+    },
+    "launch": {
+      "title": "Lánzalo en 7 días",
+      "items": [
+        "Día 1–2: afina tu mensaje de posicionamiento y tu titular principal.",
+        "Día 3–4: convierte tus mejores proyectos en casos de estudio orientados a negocio.",
+        "Día 5: crea un media kit premium + CV de una página descargable.",
+        "Día 6–7: publica, conecta analítica y empieza a subir contenido con pruebas reales."
+      ]
+    }
+  },
+  "hero": {
+    "sticker": "10+ años creando sistemas de crecimiento digital"
+  },
+  "cta": {
+    "contact": "Construyamos tu próxima web",
+    "cv": "Descargar snapshot del CV"
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "items": [
+      {
+        "date": "Actualidad",
+        "role": "Founder & CEO — FlowMind Studio LLC",
+        "body": "Lidero estrategia, desarrollo, dirección de diseño, sistemas de SEO local e implementación enfocada en conversión para clientes de negocio local."
+      },
+      {
+        "date": "10+ años",
+        "role": "Tecnología + Operaciones + Liderazgo",
+        "body": "Trayectoria práctica en delivery, optimización de procesos, ejecución con clientes y sistemas de crecimiento en entornos digitales."
+      }
+    ]
+  },
+  "education": {
+    "title": "Educación y Certificaciones",
+    "items": [
+      {
+        "title": "Especialización continua autodirigida",
+        "body": "Práctica avanzada en ingeniería web, sistemas de conversión, SEO local y dirección creativa."
+      },
+      {
+        "title": "Prueba de capacidad basada en portafolio",
+        "body": "Entrega de proyectos reales y resultados medibles como señales principales de credibilidad."
+      }
+    ]
   }
 }
