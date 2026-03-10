@@ -4,18 +4,17 @@ const DEFAULT_LANGUAGE = 'en';
 const resolveInitialLanguage = () => {
   const stored = localStorage.getItem('preferredLanguage');
   if (stored && SUPPORTED_LANGUAGES.includes(stored)) return stored;
-
   const browser = navigator.language?.slice(0, 2).toLowerCase();
-  return browser === 'es' ? 'es' : DEFAULT_LANGUAGE;
-};
-
-const setMeta = (selector, key) => {
-  const value = i18next.t(key);
-  const node = document.querySelector(selector);
-  if (node && value && value !== key) node.setAttribute('content', value);
+  return SUPPORTED_LANGUAGES.includes(browser) ? browser : DEFAULT_LANGUAGE;
 };
 
 const updateHeadTranslations = () => {
+  const setMeta = (selector, key) => {
+    const value = i18next.t(key);
+    const node = document.querySelector(selector);
+    if (node && value && value !== key) node.setAttribute('content', value);
+  };
+
   const title = i18next.t('head.title');
   if (title && title !== 'head.title') document.title = title;
 
@@ -29,26 +28,32 @@ const updateHeadTranslations = () => {
 const updateContent = () => {
   document.documentElement.lang = i18next.language;
 
-  document.querySelectorAll('[data-i18n]').forEach((element) => {
-    const key = element.getAttribute('data-i18n');
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    const key = el.getAttribute('data-i18n');
     const value = i18next.t(key);
-    if (value && value !== key) element.textContent = value;
+    if (value && value !== key) el.textContent = value;
   });
 
-  document.querySelectorAll('[data-i18n-alt]').forEach((element) => {
-    const key = element.getAttribute('data-i18n-alt');
+  document.querySelectorAll('[data-i18n-alt]').forEach((el) => {
+    const key = el.getAttribute('data-i18n-alt');
     const value = i18next.t(key);
-    if (value && value !== key) element.setAttribute('alt', value);
+    if (value && value !== key) el.setAttribute('alt', value);
   });
 
-  document.querySelectorAll('.lang-btn').forEach((button) => {
-    button.classList.toggle('active', button.dataset.lang === i18next.language);
-  });
+  const toggle = document.getElementById('language-toggle');
+  if (toggle) {
+    toggle.setAttribute('aria-label', i18next.t('button.ariaLabel'));
+    toggle.querySelector('.language-flag').textContent = i18next.language === 'en' ? '🇬🇧' : '🇪🇸';
+    toggle.querySelector('.language-code').textContent = i18next.language.toUpperCase();
+  }
 
   updateHeadTranslations();
 };
 
 const setupReveal = () => {
+  const items = document.querySelectorAll('.reveal');
+  if (!items.length) return;
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -56,54 +61,36 @@ const setupReveal = () => {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.12 });
 
-  document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+  items.forEach((item) => observer.observe(item));
 };
 
-const setupScrollEffects = () => {
+const setupScrollProgress = () => {
   const progress = document.querySelector('.progress');
   const sections = [...document.querySelectorAll('main section[id]')];
   const links = [...document.querySelectorAll('.nav a')];
 
-  const update = () => {
+  const onScroll = () => {
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const ratio = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
-    if (progress) progress.style.width = `${Math.max(0, Math.min(100, ratio))}%`;
+    if (progress) progress.style.width = `${Math.min(100, Math.max(0, ratio))}%`;
 
-    let activeSection = sections[0]?.id;
+    let active = '';
     sections.forEach((section) => {
-      const top = section.offsetTop - 160;
+      const top = section.offsetTop - 140;
       const bottom = top + section.offsetHeight;
-      if (window.scrollY >= top && window.scrollY < bottom) activeSection = section.id;
+      if (window.scrollY >= top && window.scrollY < bottom) active = section.id;
     });
 
     links.forEach((link) => {
-      const target = link.getAttribute('href')?.slice(1);
-      link.classList.toggle('active', target === activeSection);
+      const href = link.getAttribute('href')?.replace('#', '');
+      link.classList.toggle('active', href === active);
     });
   };
 
-  window.addEventListener('scroll', update, { passive: true });
-  update();
-};
-
-const setupMenu = () => {
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.nav');
-  if (!toggle || !nav) return;
-
-  toggle.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', String(open));
-  });
-
-  nav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    });
-  });
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 };
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -117,17 +104,13 @@ window.addEventListener('DOMContentLoaded', () => {
     .then(() => {
       updateContent();
       setupReveal();
-      setupScrollEffects();
-      setupMenu();
+      setupScrollProgress();
 
-      document.querySelectorAll('.lang-btn').forEach((button) => {
-        button.addEventListener('click', () => {
-          const next = button.dataset.lang;
-          if (!SUPPORTED_LANGUAGES.includes(next)) return;
-          i18next.changeLanguage(next).then(() => {
-            localStorage.setItem('preferredLanguage', next);
-            updateContent();
-          });
+      document.getElementById('language-toggle')?.addEventListener('click', () => {
+        const next = i18next.language === 'en' ? 'es' : 'en';
+        i18next.changeLanguage(next).then(() => {
+          localStorage.setItem('preferredLanguage', next);
+          updateContent();
         });
       });
     });
