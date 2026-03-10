@@ -10,15 +10,11 @@
   "a11y": {
     "skip": "Skip to main content"
   },
-  "nav": {
-    "menu": "Menu",
-    "home": "Home",
-    "about": "About",
-    "whatIDo": "What I Do",
-    "skills": "Skills",
-    "experience": "Experience",
-    "projects": "Projects",
-    "contact": "Contact"
+  "header": {
+    "profileAlt": "Portrait of Cristhian Guerrero",
+    "name": "Cristhian Guerrero Zaldívar",
+    "title": "Founder & CEO at FlowMind Studio LLC — Artistic Web Systems, Code, Design & Conversion",
+    "kicker": "Artistic Web Architect · Founder-led Studio"
   },
   "hero": {
     "eyebrow": "Web Development · Software · Automation · AI",
@@ -36,17 +32,10 @@
       "three": "core areas: web, software, automation, and AI"
     }
   },
-  "about": {
-    "title": "About Me",
-    "subtitle": "Technology, creativity, and strategy in one place",
-    "body": "For over a decade, I've worked across technology, operations, design, and leadership. That range gives me perspective: I don't just build interfaces, I build solutions with purpose, structure, and business clarity.",
-    "points": [
-      "Design with intention",
-      "Development that solves real problems",
-      "Strategy focused on growth",
-      "Clear communication and execution",
-      "Premium quality and attention to detail"
-    ]
+  "now": {
+    "title": "Current Role / Now",
+    "intro": "Founder & CEO — FlowMind Studio LLC (Austin, TX). I design and build premium artistic websites that merge creative direction, engineering, and business growth.",
+    "description": "I lead strategy, execution, and systems: conversion websites, ad landing pages, Google Business Profile optimization, technical performance, CRO, and lightweight automations for lead handling and follow-up."
   },
   "services": {
     "title": "What I Do",
@@ -73,6 +62,15 @@
         "body": "A stronger online presence through better structure, visuals, messaging, and presentation."
       }
     ]
+  },
+  "about": {
+    "title": "About",
+    "body": "I bring 10+ years of experience across technology, operations, and leadership. I create living web experiences where visual storytelling, performance, and conversion strategy work together to generate real pipeline and revenue growth.",
+    "tag": "Creative technologist · strategy + execution"
+  },
+  "services": {
+    "title": "Services",
+    "body": "Available for consulting, audits, and full builds. I can join from strategy to implementation and optimization."
   },
   "skills": {
     "title": "Skills",
@@ -206,15 +204,76 @@
     "support": "Whether you need a premium website, a digital tool, an automation, a redesign, or an AI-powered idea brought to life, I can help turn it into something real.",
     "cta": "Let's talk",
     "links": {
-      "flowmind": "FlowMind Studio",
-      "linkedin": "LinkedIn",
-      "github": "GitHub",
-      "email": "Email",
-      "whatsapp": "WhatsApp"
-    }
+      "flowmind": "FlowMind Studio (placeholder URL)",
+      "whatsapp": "WhatsApp (placeholder link)"
+    },
+    "pitch": "Open to strategic collaborations, consulting, and conversion-focused web builds."
   },
   "footer": {
-    "identity": "Cristhian Guerrero Zaldívar · Founder of FlowMind Studio LLC",
-    "copy": "© 2026 Cristhian Guerrero. All rights reserved."
+    "note": "© 2026 Cristhian Guerrero. Built for speed, clarity, and conversion."
+  },
+  "positioning": {
+    "title": "CEO Positioning Blueprint",
+    "intro": "A premium personal-brand structure that looks elite while staying 100% real and evidence-based.",
+    "pillars": {
+      "title": "Four pillars to look top-tier",
+      "items": [
+        "Authority statement: one sentence defining who you help, how, and the measurable result.",
+        "Proof wall: selected wins with context, numbers, and your exact role in each outcome.",
+        "CEO narrative: concise timeline from operator → strategist → founder.",
+        "Power CTA: direct booking flow for strategy calls, partnerships, or key opportunities."
+      ]
+    },
+    "launch": {
+      "title": "Launch in 7 days",
+      "items": [
+        "Day 1–2: sharpen your positioning message and headline.",
+        "Day 3–4: turn your best projects into business-ready case studies.",
+        "Day 5: build a premium media kit + downloadable one-page CV.",
+        "Day 6–7: publish, connect analytics, and start posting proof-driven content."
+      ]
+    }
+  },
+  "hero": {
+    "sticker": "10+ years crafting digital growth systems"
+  },
+  "cta": {
+    "contact": "Let’s build your next website",
+    "cv": "Download CV snapshot"
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "date": "Current",
+        "role": "Founder & CEO — FlowMind Studio LLC",
+        "body": "Lead strategy, development, design direction, local SEO systems, and conversion-focused implementation for local business clients."
+      },
+      {
+        "date": "10+ years",
+        "role": "Tech + Operations + Leadership",
+        "body": "Hands-on track record across delivery, process optimization, client execution, and growth systems in digital environments."
+      }
+    ]
+  },
+  "education": {
+    "title": "Education & Certifications",
+    "items": [
+      {
+        "title": "Continuous self-directed specialization",
+        "body": "Advanced practice in web engineering, conversion systems, local SEO, and creative direction."
+      },
+      {
+        "title": "Portfolio-based capability proof",
+        "body": "Real-world project delivery and measurable outcomes as primary credibility signals."
+      }
+    ]
   }
 }
