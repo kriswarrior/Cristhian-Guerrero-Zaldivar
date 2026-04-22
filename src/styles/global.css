@@ -681,6 +681,7 @@ p {
   inset: 0;
   display: grid;
   grid-template-columns: minmax(0, 1.02fr) minmax(320px, 0.98fr);
+  align-items: start;
   gap: 1.5rem;
   padding: 1.45rem;
   border-radius: calc(var(--radius-large) + 4px);
@@ -727,7 +728,9 @@ p {
   position: relative;
   overflow: hidden;
   border-radius: calc(var(--radius-large) - 8px);
-  min-height: 100%;
+  align-self: start;
+  aspect-ratio: 16 / 10;
+  min-height: 0;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(4, 10, 18, 0.9);
 }
@@ -735,7 +738,12 @@ p {
 .portfolio-media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center top;
+  padding: 0.7rem;
+  background:
+    radial-gradient(circle at 18% 16%, rgba(119, 199, 255, 0.12), transparent 22%),
+    linear-gradient(180deg, rgba(11, 25, 43, 0.96), rgba(6, 13, 24, 0.96));
 }
 
 .portfolio-media-brand {
@@ -752,6 +760,7 @@ p {
   flex-direction: column;
   gap: 1rem;
   width: min(28rem, 100%);
+  min-height: calc(100% - 1.4rem);
   padding: 2rem;
   border-radius: 34px;
   border: 1px solid rgba(255, 255, 255, 0.09);
@@ -788,7 +797,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .portfolio-heading {
@@ -854,15 +863,23 @@ p {
 }
 
 .concept-card {
+  display: grid;
+  align-content: start;
+  gap: 0.9rem;
   padding: 0.9rem;
 }
 
 .concept-card img {
   width: 100%;
-  aspect-ratio: 1.55 / 1;
-  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center top;
+  padding: 0.6rem;
   border-radius: 22px;
-  margin-bottom: 0.95rem;
+  background:
+    radial-gradient(circle at 18% 16%, rgba(119, 199, 255, 0.12), transparent 22%),
+    linear-gradient(180deg, rgba(11, 25, 43, 0.96), rgba(6, 13, 24, 0.96));
+  margin-bottom: 0;
 }
 
 .timeline {
@@ -1245,7 +1262,7 @@ p {
   .portfolio-card {
     position: relative;
     inset: auto;
-    flex: 0 0 min(86vw, 29rem);
+    flex: 0 0 min(90vw, 32rem);
     grid-template-columns: 1fr;
     gap: 1rem;
     min-height: 0;
@@ -1264,7 +1281,7 @@ p {
   }
 
   .portfolio-media {
-    min-height: 15rem;
+    aspect-ratio: 16 / 9;
   }
 
   .portfolio-actions .button {
@@ -1274,7 +1291,7 @@ p {
   .concept-grid {
     grid-template-columns: none;
     grid-auto-flow: column;
-    grid-auto-columns: minmax(15rem, 72vw);
+    grid-auto-columns: minmax(17rem, 78vw);
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -1369,14 +1386,42 @@ p {
   }
 
   .portfolio-card {
-    flex-basis: calc(100vw - 34px);
-    padding: 1rem;
+    flex-basis: calc(100vw - 28px);
+    padding: 0.92rem;
     border-radius: 26px;
   }
 
   .portfolio-media {
-    min-height: 13.2rem;
+    aspect-ratio: 16 / 9;
     border-radius: 22px;
+  }
+
+  .portfolio-body {
+    gap: 0.78rem;
+  }
+
+  .portfolio-summary {
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .portfolio-detail {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .portfolio-tags {
+    gap: 0.48rem;
+  }
+
+  .portfolio-tags li {
+    font-size: 0.82rem;
+    padding: 0.5rem 0.68rem;
   }
 
   .portfolio-badge {
@@ -1391,6 +1436,19 @@ p {
     flex-direction: column;
   }
 
+  .concept-grid {
+    grid-auto-columns: minmax(18rem, 82vw);
+  }
+
+  .concept-card {
+    padding: 0.82rem;
+  }
+
+  .concept-card img {
+    aspect-ratio: 16 / 9;
+    padding: 0.45rem;
+  }
+
   .social-strip a,
   .resume-meta span {
     flex: 1 1 calc(50% - 0.4rem);
@@ -1399,6 +1457,14 @@ p {
 }
 
 @media (max-width: 520px) {
+  .portfolio-card {
+    flex-basis: calc(100vw - 22px);
+  }
+
+  .concept-grid {
+    grid-auto-columns: minmax(17.5rem, 88vw);
+  }
+
   .signal-row {
     grid-template-columns: 1fr;
   }
