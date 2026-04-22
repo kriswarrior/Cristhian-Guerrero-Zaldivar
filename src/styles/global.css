@@ -673,7 +673,7 @@ p {
 
 .portfolio-track {
   position: relative;
-  min-height: 42rem;
+  min-height: clamp(31rem, 34vw, 36rem);
 }
 
 .portfolio-card {
@@ -729,21 +729,19 @@ p {
   overflow: hidden;
   border-radius: calc(var(--radius-large) - 8px);
   align-self: start;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 21 / 10;
   min-height: 0;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(4, 10, 18, 0.9);
+  background:
+    radial-gradient(circle at 18% 16%, rgba(119, 199, 255, 0.12), transparent 22%),
+    linear-gradient(180deg, rgba(11, 25, 43, 0.96), rgba(6, 13, 24, 0.96));
 }
 
 .portfolio-media img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center top;
-  padding: 0.7rem;
-  background:
-    radial-gradient(circle at 18% 16%, rgba(119, 199, 255, 0.12), transparent 22%),
-    linear-gradient(180deg, rgba(11, 25, 43, 0.96), rgba(6, 13, 24, 0.96));
 }
 
 .portfolio-media-brand {
@@ -760,7 +758,6 @@ p {
   flex-direction: column;
   gap: 1rem;
   width: min(28rem, 100%);
-  min-height: calc(100% - 1.4rem);
   padding: 2rem;
   border-radius: 34px;
   border: 1px solid rgba(255, 255, 255, 0.09);
@@ -863,22 +860,18 @@ p {
 }
 
 .concept-card {
-  display: grid;
-  align-content: start;
-  gap: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
   padding: 0.9rem;
 }
 
 .concept-card img {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
+  height: clamp(10.5rem, 18vw, 13.5rem);
+  object-fit: cover;
   object-position: center top;
-  padding: 0.6rem;
   border-radius: 22px;
-  background:
-    radial-gradient(circle at 18% 16%, rgba(119, 199, 255, 0.12), transparent 22%),
-    linear-gradient(180deg, rgba(11, 25, 43, 0.96), rgba(6, 13, 24, 0.96));
   margin-bottom: 0;
 }
 
@@ -1281,7 +1274,7 @@ p {
   }
 
   .portfolio-media {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 19 / 10;
   }
 
   .portfolio-actions .button {
@@ -1291,7 +1284,7 @@ p {
   .concept-grid {
     grid-template-columns: none;
     grid-auto-flow: column;
-    grid-auto-columns: minmax(17rem, 78vw);
+    grid-auto-columns: minmax(18rem, 82vw);
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -1437,7 +1430,7 @@ p {
   }
 
   .concept-grid {
-    grid-auto-columns: minmax(18rem, 82vw);
+    grid-auto-columns: minmax(18rem, 86vw);
   }
 
   .concept-card {
@@ -1445,8 +1438,7 @@ p {
   }
 
   .concept-card img {
-    aspect-ratio: 16 / 9;
-    padding: 0.45rem;
+    height: 10.25rem;
   }
 
   .social-strip a,
@@ -1462,7 +1454,7 @@ p {
   }
 
   .concept-grid {
-    grid-auto-columns: minmax(17.5rem, 88vw);
+    grid-auto-columns: minmax(17.5rem, 90vw);
   }
 
   .signal-row {
