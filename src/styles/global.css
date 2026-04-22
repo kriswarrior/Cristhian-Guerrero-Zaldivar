@@ -1071,7 +1071,7 @@ p {
     padding: 0 2px 0.35rem;
     margin: 0 -2px;
     gap: 0.65rem;
-    touch-action: pan-x;
+    touch-action: pan-x pan-y;
   }
 
   .site-nav a {
@@ -1203,7 +1203,7 @@ p {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     padding-bottom: 0.45rem;
-    touch-action: pan-x;
+    touch-action: pan-x pan-y;
   }
 
   .manifesto-card {
@@ -1249,7 +1249,7 @@ p {
     scroll-padding-inline: 0.1rem;
     padding: 0 0.08rem 0.55rem;
     min-height: auto;
-    touch-action: pan-x;
+    touch-action: pan-x pan-y;
   }
 
   .portfolio-card {
@@ -1289,7 +1289,7 @@ p {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     padding-bottom: 0.4rem;
-    touch-action: pan-x;
+    touch-action: pan-x pan-y;
   }
 
   .concept-card {
