@@ -1,4 +1,32 @@
 # Cristhian-Guerrero-Zaldivar
-Personal CV of Cristhian Guerrero, This repository contains my personal resume as a responsive and professional one-page website built with clean HTML and CSS. It highlights my background, skills, experience, and contact information, and is designed to serve as a digital introduction for job applications or professional networking.
+
+Personal one-page CV and portfolio for Cristhian Guerrero Zaldivar, rebuilt from zero with Astro for GitHub Pages.
+
+## Stack
+
+- Astro 4
+- Static deployment to GitHub Pages
+- Custom CSS and vanilla client-side interactions
+- Auto-generated PDF CV during build
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+## Production build
+
+```bash
+npm run build
+```
+
+The build generates:
+
+- `dist/` for GitHub Pages deployment
+- `public/assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf`
+
+## URL
 
 https://kriswarrior.github.io/Cristhian-Guerrero-Zaldivar/

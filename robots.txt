@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://kriswarrior.github.io/Cristhian-Guerrero-Zaldivar/sitemap.xml

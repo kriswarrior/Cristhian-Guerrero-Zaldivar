@@ -1,0 +1,68 @@
+---
+import { site, structuredData } from "../data/site.js";
+import "../styles/global.css";
+
+const {
+  title = site.seo.title,
+  description = site.seo.description,
+  page = "",
+} = Astro.props;
+
+const joinBase = (path = "") => {
+  const base = import.meta.env.BASE_URL.endsWith("/")
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`;
+  return `${base}${String(path).replace(/^\//, "")}`;
+};
+
+const siteBase = new URL(joinBase(), Astro.site);
+const canonical = new URL(page || ".", siteBase).toString();
+const portrait = new URL(joinBase("assets/profile/cristhian-guerrero-zaldivar-portrait.png"), Astro.site).toString();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-site-verification" content="KufHckyvKlIhTRy30fFoQef7rAL9xwUS-x2LvyU3DM0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content={site.seo.keywords.join(", ")}
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="theme-color" content="#07101d" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href={joinBase("favicon.svg")} type="image/svg+xml" />
+    <link rel="manifest" href={joinBase("site.webmanifest")} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={portrait} />
+    <meta property="og:site_name" content={site.name} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={portrait} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+  </head>
+  <body>
+    <div class="ambient ambient-a" aria-hidden="true"></div>
+    <div class="ambient ambient-b" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+    <slot />
+  </body>
+</html>

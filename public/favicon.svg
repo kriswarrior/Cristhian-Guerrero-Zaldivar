@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="CG monogram">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#77c7ff" />
+      <stop offset="100%" stop-color="#ffb27d" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="32" fill="#07101d" />
+  <rect x="10" y="10" width="108" height="108" rx="26" fill="none" stroke="url(#bg)" stroke-width="4" opacity="0.9" />
+  <text
+    x="64"
+    y="74"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-size="42"
+    font-weight="700"
+    fill="url(#bg)"
+  >
+    CG
+  </text>
+</svg>
