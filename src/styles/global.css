@@ -202,6 +202,29 @@ textarea {
   transform: scaleX(1);
 }
 
+.site-nav,
+.manifesto-grid,
+.portfolio-track,
+.concept-grid {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 178, 125, 0.34) transparent;
+}
+
+.site-nav::-webkit-scrollbar,
+.manifesto-grid::-webkit-scrollbar,
+.portfolio-track::-webkit-scrollbar,
+.concept-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.site-nav::-webkit-scrollbar-thumb,
+.manifesto-grid::-webkit-scrollbar-thumb,
+.portfolio-track::-webkit-scrollbar-thumb,
+.concept-grid::-webkit-scrollbar-thumb {
+  background: rgba(255, 178, 125, 0.34);
+  border-radius: 999px;
+}
+
 .nav-cta,
 .button {
   display: inline-flex;
@@ -1019,50 +1042,188 @@ p {
     border-radius: 28px;
     grid-template-columns: 1fr;
     justify-items: start;
+    gap: 12px;
+    padding: 12px;
+    background: rgba(7, 16, 29, 0.8);
+  }
+
+  .brand {
+    width: 100%;
   }
 
   .site-nav {
+    width: 100%;
     justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding: 0 2px 0.35rem;
+    margin: 0 -2px;
+    gap: 0.65rem;
+    touch-action: pan-x;
+  }
+
+  .site-nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 0.72rem 0.98rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.04);
+    scroll-snap-align: start;
+  }
+
+  .site-nav a::after {
+    display: none;
+  }
+
+  .nav-cta {
+    width: 100%;
+    justify-content: center;
   }
 
   .hero-scene {
     grid-template-columns: 1fr;
+    min-height: auto;
+    gap: 1.4rem;
+    padding-top: 2.4rem;
   }
 
   .hero-copy {
     padding-top: 0;
+    gap: 1rem;
+  }
+
+  .hero-intro,
+  .hero-body {
+    max-width: none;
   }
 
   .hero-stage {
     min-height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem;
+    align-items: stretch;
+    width: 100%;
+    max-width: 40rem;
+    margin-inline: auto;
   }
 
   .portrait-shell {
     position: relative;
     top: auto;
+    grid-column: 1 / -1;
+    max-width: min(100%, 30rem);
+    margin-inline: auto;
+  }
+
+  .portrait-shell::before {
+    inset: 7% 10% 10% 12%;
+    transform: translate3d(-26px, -4px, -110px) rotateY(-9deg);
+  }
+
+  .portrait-shell::after {
+    inset: 16% 4% 2% 18%;
+    transform: translate3d(22px, 0, -160px) rotateY(8deg);
+  }
+
+  .portrait-cut {
+    border-radius: 36px;
   }
 
   .floating-card-a,
   .floating-card-b,
   .floating-card-c {
-    position: static;
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
     max-width: none;
-    margin-top: 1rem;
+    margin-top: 0;
     transform: none;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .signal-grid,
-  .manifesto-grid,
   .timeline,
-  .education-grid,
-  .strength-grid,
-  .engineering-grid,
   .contact-methods {
     grid-template-columns: 1fr;
   }
 
+  .floating-card-a {
+    grid-column: 1;
+  }
+
+  .floating-card-b {
+    grid-column: 2;
+  }
+
+  .floating-card-c {
+    grid-column: 1 / -1;
+  }
+
+  .hero-pullquote {
+    grid-column: 1 / -1;
+    max-width: none;
+    padding: 1.15rem 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 2px solid rgba(255, 178, 125, 0.72);
+    border-radius: 24px;
+  }
+
+  .signal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .story-scene,
+  .concept-lab {
+    grid-template-columns: 1fr;
+  }
+
+  .manifesto-grid {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(16.5rem, 76vw);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding-bottom: 0.45rem;
+    touch-action: pan-x;
+  }
+
+  .manifesto-card {
+    scroll-snap-align: start;
+    min-height: 0;
+  }
+
+  .education-grid,
+  .strength-grid,
+  .engineering-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .portfolio-shell {
     grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+  .portfolio-shell::before {
+    content: "Swipe Through Live Projects";
+    display: inline-flex;
+    align-items: center;
+    padding: 0.62rem 0.92rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--muted-soft);
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
   }
 
   .portfolio-arrow {
@@ -1070,46 +1231,102 @@ p {
   }
 
   .portfolio-track {
-    min-height: 47rem;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 0.1rem;
+    padding: 0 0.08rem 0.55rem;
+    min-height: auto;
+    touch-action: pan-x;
   }
 
   .portfolio-card {
+    position: relative;
+    inset: auto;
+    flex: 0 0 min(86vw, 29rem);
     grid-template-columns: 1fr;
+    gap: 1rem;
+    min-height: 0;
+    opacity: 1 !important;
+    pointer-events: auto;
+    transform: none !important;
+    scroll-snap-align: center;
   }
 
   .portfolio-card[data-state="prev"],
-  .portfolio-card[data-state="next"] {
-    opacity: 0;
-    transform: scale(0.88);
+  .portfolio-card[data-state="next"],
+  .portfolio-card[data-state="hidden"],
+  .portfolio-card[data-state="stacked"] {
+    opacity: 1;
+    z-index: auto;
+  }
+
+  .portfolio-media {
+    min-height: 15rem;
+  }
+
+  .portfolio-actions .button {
+    width: 100%;
   }
 
   .concept-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(15rem, 72vw);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding-bottom: 0.4rem;
+    touch-action: pan-x;
+  }
+
+  .concept-card {
+    scroll-snap-align: start;
   }
 }
 
 @media (max-width: 680px) {
   :root {
-    --max-width: calc(100vw - 24px);
+    --max-width: calc(100vw - 22px);
     --radius: 22px;
     --radius-large: 30px;
   }
 
+  .site-header {
+    padding: 11px;
+    border-radius: 24px;
+  }
+
   .section-screen {
-    padding: 3.5rem 0;
+    padding: 3rem 0;
   }
 
   h1 {
-    font-size: clamp(2.6rem, 13vw, 4.1rem);
+    font-size: clamp(2.45rem, 13vw, 3.85rem);
+    max-width: 9ch;
   }
 
   h2 {
-    font-size: clamp(2rem, 10vw, 3rem);
+    font-size: clamp(1.85rem, 10vw, 2.75rem);
   }
 
-  .brand-copy small,
+  .brand-copy strong {
+    font-size: 0.88rem;
+  }
+
+  .brand-copy small {
+    font-size: 0.67rem;
+  }
+
   .site-nav {
+    gap: 0.55rem;
     font-size: 0.8rem;
+  }
+
+  .site-nav a {
+    padding: 0.66rem 0.86rem;
   }
 
   .hero-actions,
@@ -1118,30 +1335,77 @@ p {
     align-items: stretch;
   }
 
+  .hero-stage {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .floating-card-a,
+  .floating-card-b,
+  .floating-card-c {
+    grid-column: auto;
+  }
+
   .signal-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.55rem;
   }
 
-  .signal-row li,
-  .portfolio-tags li,
-  .chip-list li,
-  .timeline-highlights li,
-  .social-strip a,
-  .resume-meta span {
-    width: 100%;
-    text-align: center;
+  .signal-row li {
+    min-width: 0;
+  }
+
+  .signal-grid,
+  .education-grid,
+  .strength-grid,
+  .engineering-grid {
+    grid-template-columns: 1fr;
   }
 
   .portfolio-track {
-    min-height: 53rem;
+    gap: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .portfolio-card {
+    flex-basis: calc(100vw - 34px);
     padding: 1rem;
+    border-radius: 26px;
+  }
+
+  .portfolio-media {
+    min-height: 13.2rem;
+    border-radius: 22px;
+  }
+
+  .portfolio-badge {
+    left: 12px;
+    bottom: 12px;
+    max-width: calc(100% - 24px);
+    padding: 0.5rem 0.72rem;
+    font-size: 0.76rem;
   }
 
   .portfolio-heading {
     flex-direction: column;
+  }
+
+  .social-strip a,
+  .resume-meta span {
+    flex: 1 1 calc(50% - 0.4rem);
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .signal-row {
+    grid-template-columns: 1fr;
+  }
+
+  .social-strip a,
+  .resume-meta span {
+    flex-basis: 100%;
   }
 }
 

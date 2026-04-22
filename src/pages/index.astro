@@ -385,9 +385,18 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
       const cards = Array.from(portfolioShell.querySelectorAll("[data-portfolio-card]"));
       const prevButton = portfolioShell.querySelector("[data-portfolio-prev]");
       const nextButton = portfolioShell.querySelector("[data-portfolio-next]");
+      const mobilePortfolio = window.matchMedia("(max-width: 960px)");
       let activeIndex = 0;
 
       const renderCarousel = () => {
+        if (mobilePortfolio.matches) {
+          cards.forEach((card) => {
+            card.dataset.state = "stacked";
+            card.setAttribute("aria-hidden", "false");
+          });
+          return;
+        }
+
         cards.forEach((card, index) => {
           const distance = (index - activeIndex + cards.length) % cards.length;
           const reverseDistance = (activeIndex - index + cards.length) % cards.length;
@@ -412,6 +421,11 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
         renderCarousel();
       });
 
+      if (mobilePortfolio.addEventListener) {
+        mobilePortfolio.addEventListener("change", renderCarousel);
+      } else if (mobilePortfolio.addListener) {
+        mobilePortfolio.addListener(renderCarousel);
+      }
       renderCarousel();
     }
   </script>
