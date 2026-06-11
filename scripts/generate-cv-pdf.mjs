@@ -123,7 +123,7 @@ drawText(
   [0.27, 0.31, 0.38],
 );
 y -= 20;
-drawText(`${site.email} · ${site.phoneDisplay}`, margin, y, "F1", 10, [0.38, 0.43, 0.51]);
+drawText(site.email, margin, y, "F1", 10, [0.38, 0.43, 0.51]);
 y -= 14;
 drawText("LinkedIn, GitHub, and FlowMind Studio available from the personal website.", margin, y, "F1", 10, [
   0.38,

@@ -10,9 +10,20 @@ const withBase = (path = "") => {
 };
 const portrait = withBase("assets/profile/cristhian-guerrero-zaldivar-portrait.png");
 const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
+const heroCoast = withBase("assets/hero/tropical-coast.png");
+const heroWave = withBase("assets/hero/glass-wave.png");
+const heroFrame = withBase("assets/hero/tropical-frame.png");
+const heroProjectIds = new Set(["brilliant", "ultrashine"]);
+const heroProjects = site.portfolio
+  .filter((project) => project.image && heroProjectIds.has(project.id));
 ---
 
 <BaseLayout>
+  <div class="hero-loader" data-loader aria-hidden="true">
+    <div class="loader-orbit"></div>
+    <p>Loading visual system</p>
+  </div>
+
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header">
@@ -25,10 +36,10 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
     </a>
 
     <nav class="site-nav" aria-label="Primary">
-      <a href="#story">Approach</a>
+      <a href="#story">Studio</a>
       <a href="#portfolio">Work</a>
-      <a href="#experience">Experience</a>
-      <a href="#capabilities">Range</a>
+      <a href="#studio">Practice</a>
+      <a href="#capabilities">Capabilities</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -39,52 +50,75 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
 
   <main id="main-content">
     <section class="hero-scene section-screen" id="top">
+      <img class="hero-bg" src={heroCoast} alt="" aria-hidden="true" loading="eager" width="1677" height="938" />
+      <img class="hero-frame-layer" src={heroFrame} alt="" aria-hidden="true" loading="eager" width="1536" height="1024" />
+      <img class="hero-wave-layer" src={heroWave} alt="" aria-hidden="true" loading="eager" width="1774" height="887" />
       <div class="section-grid" aria-hidden="true"></div>
+
       <div class="hero-copy" data-reveal>
-        <p class="eyebrow">{site.hero.eyebrow}</p>
+        <p class="eyebrow">Independent developer · Visual systems studio</p>
         <h1>{site.hero.title}</h1>
         <p class="hero-intro">{site.hero.intro}</p>
         <p class="hero-body">{site.hero.body}</p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href={site.links.email}>{site.hero.ctas.primary}</a>
-          <a class="button button-secondary" href={withBase("resume/")}>{site.hero.ctas.secondary}</a>
           <a
-            class="button button-ghost"
+            class="button button-primary"
             href={site.links.flowmind}
             target="_blank"
             rel="noreferrer noopener"
+          >
+            {site.hero.ctas.primary}
+          </a>
+          <a class="button button-secondary" href="#portfolio">{site.hero.ctas.secondary}</a>
+          <a
+            class="button button-ghost"
+            href={site.links.email}
           >
             {site.hero.ctas.tertiary}
           </a>
         </div>
 
         <ul class="signal-row" role="list">
-          <li>Based in Austin, Texas</li>
-          <li>Founder-led</li>
-          <li>English-first presence</li>
-          <li>Built for real search</li>
+          <li>Built to stand out</li>
+          <li>Founder-led studio</li>
+          <li>Web development + local SEO</li>
+          <li>Visual systems with intent</li>
         </ul>
       </div>
 
       <div class="hero-stage" data-reveal>
-        <div class="portrait-shell">
+        <div class="hero-code-glass" aria-hidden="true">
+          <span>.vision &#123;</span>
+          <span>creative: true;</span>
+          <span>strategy: solid;</span>
+          <span>execution: precise;</span>
+          <span>&#125;</span>
+        </div>
+
+        <div class="portrait-shell hero-cover">
           <div class="portrait-cut">
             <img src={portrait} alt={`Studio portrait of ${site.name}`} width="1254" height="1254" />
           </div>
         </div>
 
-        <div class="floating-card floating-card-a">
+        <div class="hero-project-stack" aria-label="Featured studio work">
+          {heroProjects.map((project) => (
+            <a
+              class="hero-project-card"
+              href={project.href}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img src={withBase(project.image)} alt={`${project.title} project preview`} width="1120" height="700" />
+              <span>{project.title}</span>
+            </a>
+          ))}
+        </div>
+
+        <div class="hero-studio-note">
           <span>FlowMind Studio</span>
-          <strong>Founder-led, team of four</strong>
-        </div>
-        <div class="floating-card floating-card-b">
-          <span>Public signal</span>
-          <strong>Designed to feel clear, human, and credible</strong>
-        </div>
-        <div class="floating-card floating-card-c">
-          <span>Search identity</span>
-          <strong>{site.name} · Austin, Texas · Developer</strong>
+          <strong>Sharp art direction, serious engineering, and websites built to feel unmistakable.</strong>
         </div>
       </div>
 
@@ -221,13 +255,13 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
       </div>
     </section>
 
-    <section class="experience-scene section-screen" id="experience">
+    <section class="experience-scene section-screen" id="studio">
       <div class="section-head section-head-narrow" data-reveal>
-        <p class="section-kicker">Experience</p>
-        <h2>A practical career arc shaped by pressure, responsibility, and execution.</h2>
+        <p class="section-kicker">Practice</p>
+        <h2>A studio practice shaped by software, security, and client-facing delivery.</h2>
         <p>
-          My background is not theoretical. It moves through cybersecurity, operations, team leadership,
-          and founder work. That mix changed how I build: calm, clear, accountable, and hard to rattle.
+          My public work is focused on informatics: web development, technical direction, cybersecurity
+          thinking, and the systems behind a credible business presence.
         </p>
       </div>
 
@@ -322,8 +356,8 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
         <p class="section-kicker">Resume</p>
         <h3>Need the structured version?</h3>
         <p>
-          I also built a print-ready resume route and a downloadable PDF snapshot so this site works for
-          both search presence and formal hiring workflows.
+          A focused technical resume is available for formal hiring workflows, without unrelated work
+          history or direct phone contact details.
         </p>
 
         <div class="resume-actions">
@@ -377,6 +411,19 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
       window.addEventListener("pointermove", onPointerMove);
       window.addEventListener("scroll", onScroll, { passive: true });
       onScroll();
+    }
+
+    const loader = document.querySelector("[data-loader]");
+    const releaseLoader = () => {
+      loader?.classList.add("is-hidden");
+      window.setTimeout(() => loader?.remove(), 520);
+    };
+
+    if (document.readyState === "complete") {
+      window.setTimeout(releaseLoader, 420);
+    } else {
+      window.addEventListener("load", () => window.setTimeout(releaseLoader, 420), { once: true });
+      window.setTimeout(releaseLoader, 2600);
     }
 
     const portfolioShell = document.querySelector("[data-portfolio-shell]");

@@ -10,47 +10,43 @@ export const site = {
   basedIn: "Austin, Texas",
   country: "United States",
   email: "criszaldivar03@gmail.com",
-  phoneDisplay: "+1 (512) 620-5984",
-  phoneHref: "+15126205984",
   links: {
     flowmind: "https://flowmindstudio.com/",
     linkedin: "https://www.linkedin.com/in/cristhian-guerrero-z",
     github: "https://github.com/kriswarrior",
-    whatsapp: "https://wa.me/15126205984",
-    sms: "sms:+15126205984",
     email: "mailto:criszaldivar03@gmail.com",
   },
   hero: {
-    eyebrow: "Developer + Technical Director · Founder of FlowMind Studio",
-    title: "I build digital experiences people trust on the first scroll.",
+    eyebrow: "Founder Studio Cover · FlowMind Studio",
+    title: "Cristhian Guerrero Zaldivar",
     intro:
-      "I'm Cristhian Guerrero Zaldivar, an Austin-based founder who works where product direction, software, and online presence meet.",
+      "Founder and Technical Director building premium digital presence through FlowMind Studio.",
     body:
-      "Through FlowMind Studio, I lead a four-person team creating artistic websites, local SEO systems, and polished digital experiences for real businesses. My style stays close and human, but the execution is disciplined, strategic, and built to hold up in production.",
+      "I design and build polished websites, local SEO systems, and public-facing digital experiences for real businesses that need to look trustworthy from the first scroll.",
     pullquote:
       "A website should feel like a real person is behind it, not just a template trying to look expensive.",
     ctas: {
-      primary: "Email me",
-      secondary: "Open resume",
-      tertiary: "Visit FlowMind Studio",
+      primary: "Visit FlowMind Studio",
+      secondary: "See work",
+      tertiary: "Email me",
     },
   },
   signals: [
     {
-      value: "4",
-      label: "people inside the FlowMind Studio team I currently lead",
+      value: "Studio",
+      label: "Founder-led digital presence through FlowMind Studio",
     },
     {
-      value: "10+",
-      label: "years across technology, operations, leadership, and execution",
+      value: "Live",
+      label: "Business websites built for real clients and search intent",
     },
     {
-      value: "4",
-      label: "live business websites highlighted here with public URLs",
+      value: "SEO",
+      label: "Local visibility, clear structure, and trustworthy pages",
     },
     {
       value: "Austin",
-      label: "Texas base with work shaped for real businesses and real search",
+      label: "Texas base with work shaped for practical business outcomes",
     },
   ],
   manifesto: [
@@ -256,37 +252,11 @@ export const site = {
       ],
     },
     {
-      title: "Stocking 2 Team Lead",
-      company: "Walmart",
-      start: "December 2024",
-      end: "Present",
-      location: "Austin, Texas · On-site",
-      body:
-        "Lead high-volume execution with a strong focus on coordination, accountability, and keeping operations stable under pressure.",
-      highlights: [
-        "Hands-on leadership in a demanding real-world environment",
-        "Team communication, organization, and responsibility at scale",
-      ],
-    },
-    {
-      title: "Walmart Associate",
-      company: "Walmart",
-      start: "November 2023",
-      end: "July 2025",
-      location: "Austin, Texas · Full-time",
-      body:
-        "Worked full time in a fast-paced retail environment while sharpening discipline, reliability, and execution consistency.",
-      highlights: [
-        "Data-aware thinking in daily operations",
-        "Operational support and consistent delivery",
-      ],
-    },
-    {
       title: "Cybersecurity Analyst",
       company: "NovaSec Solutions",
       start: "November 2021",
       end: "July 2022",
-      location: "Havana, Cuba · Hybrid",
+      location: "Hybrid technical collaboration",
       body:
         "Collaborated with the IT department to strengthen endpoint security architecture and improve defensive thinking in practice.",
       highlights: [
@@ -318,16 +288,16 @@ export const site = {
       note: "Best for serious conversations, introductions, and hiring outreach.",
     },
     {
-      label: "SMS",
-      value: "+1 (512) 620-5984",
-      href: "sms:+15126205984",
-      note: "Best for quick contact from recruiters, collaborators, or local clients.",
+      label: "LinkedIn",
+      value: "Professional profile",
+      href: "https://www.linkedin.com/in/cristhian-guerrero-z",
+      note: "Best for professional context, background, and introductions.",
     },
     {
-      label: "WhatsApp",
-      value: "Chat on WhatsApp",
-      href: "https://wa.me/15126205984",
-      note: "Useful for direct business communication and warm inbound leads.",
+      label: "FlowMind",
+      value: "Studio website",
+      href: "https://flowmindstudio.com/",
+      note: "Best for seeing the business direction and client-facing work.",
     },
   ],
   footerNote:
@@ -369,7 +339,6 @@ export const structuredData = {
       image:
         "https://kriswarrior.github.io/Cristhian-Guerrero-Zaldivar/assets/profile/cristhian-guerrero-zaldivar-portrait.png",
       email: site.email,
-      telephone: site.phoneDisplay,
       jobTitle: "Founder of FlowMind Studio",
       worksFor: {
         "@type": "Organization",
