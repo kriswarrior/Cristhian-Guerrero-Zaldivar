@@ -91,9 +91,7 @@ const addHeading = (text) => {
   ensureSpace(34);
   drawText(text, margin, y, "F2", 18, [0.06, 0.07, 0.1]);
   y -= 24;
-  operations.push(
-    `0.93 0.58 0.38 RG ${margin} ${y} m ${pageWidth - margin} ${y} l S`,
-  );
+  operations.push(`0.93 0.58 0.38 RG ${margin} ${y} m ${pageWidth - margin} ${y} l S`);
   y -= 16;
 };
 
@@ -101,7 +99,7 @@ const addBulletList = (items, indent = 14) => {
   for (const item of items) {
     const lines = wrapText(item, Math.floor((contentWidth - indent) / (11 * 0.52)));
     ensureSpace(lines.length * 16 + 4);
-    drawText("•", margin, y, "F2", 11, [0.93, 0.58, 0.38]);
+    drawText("-", margin, y, "F2", 11, [0.93, 0.58, 0.38]);
     lines.forEach((line, index) => {
       drawText(line, margin + indent, y - index * 16, "F1", 11, [0.27, 0.31, 0.38]);
     });
@@ -115,7 +113,7 @@ newPage();
 drawText(site.name, margin, y, "F2", 24, [0.06, 0.07, 0.1]);
 y -= 26;
 drawText(
-  `${site.role} · Founder of FlowMind Studio · Austin, Texas`,
+  `${site.role} | Founder of FlowMind Studio | Austin, Texas`,
   margin,
   y,
   "F1",
@@ -134,13 +132,13 @@ y -= 26;
 
 addHeading("Profile");
 addBlock(
-  "Austin-based developer and founder leading FlowMind Studio. I build artistic websites, trustworthy digital systems, and clean public-facing experiences that connect clear communication, search visibility, and professional credibility.",
+  "Austin-based developer and founder leading FlowMind Studio. I build professional websites, trustworthy digital systems, and clean public-facing experiences that connect clear communication, search visibility, and business credibility.",
   { size: 11.5 },
 );
 
 addHeading("Selected Work");
 site.portfolio.forEach((project) => {
-  addBlock(`${project.title} · ${project.category}`, {
+  addBlock(`${project.title} | ${project.category}`, {
     font: "F2",
     size: 12,
     color: [0.06, 0.07, 0.1],
@@ -152,13 +150,13 @@ site.portfolio.forEach((project) => {
 
 addHeading("Experience");
 site.experience.forEach((item) => {
-  addBlock(`${item.title} · ${item.company}`, {
+  addBlock(`${item.title} | ${item.company}`, {
     font: "F2",
     size: 12,
     color: [0.06, 0.07, 0.1],
     gapAfter: 2,
   });
-  addBlock(`${item.start} — ${item.end} · ${item.location}`, {
+  addBlock(`${item.start} - ${item.end} | ${item.location}`, {
     size: 10,
     color: [0.38, 0.43, 0.51],
     gapAfter: 4,
@@ -179,7 +177,7 @@ site.education.forEach((item) => {
     gapAfter: 2,
   });
   addBlock(`${item.degree}`, { gapAfter: 2 });
-  addBlock(`${item.start} — ${item.end}`, {
+  addBlock(`${item.start} - ${item.end}`, {
     size: 10,
     color: [0.38, 0.43, 0.51],
     gapAfter: 10,
@@ -194,7 +192,7 @@ site.engineeringRange.forEach((group) => {
     color: [0.06, 0.07, 0.1],
     gapAfter: 2,
   });
-  addBlock(group.items.join(" · "), { gapAfter: 8 });
+  addBlock(group.items.join(", "), { gapAfter: 8 });
 });
 
 addBlock("Personal website: https://kriswarrior.github.io/Cristhian-Guerrero-Zaldivar/", {

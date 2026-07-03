@@ -2,11 +2,11 @@ export const site = {
   name: "Cristhian Guerrero Zaldivar",
   legalName: "Cristhian Guerrero Zaldivar",
   altNames: [
-    "Cristhian Guerrero Zaldívar",
+    "Cristhian Guerrero Zaldivar",
     "Cristian Guerrero Zaldivar",
     "Kristian Guerrero Zaldivar",
   ],
-  role: "Developer + Technical Director",
+  role: "Founder, Developer & Technical Director",
   basedIn: "Austin, Texas",
   country: "United States",
   email: "criszaldivar03@gmail.com",
@@ -16,71 +16,73 @@ export const site = {
     github: "https://github.com/kriswarrior",
     email: "mailto:criszaldivar03@gmail.com",
   },
+  assets: {
+    portrait: "/assets/profile/cristhian-founder-portrait.jpg",
+  },
   hero: {
-    eyebrow: "Founder Studio Cover · FlowMind Studio",
+    eyebrow: "Austin, Texas | FlowMind Studio",
     title: "Cristhian Guerrero Zaldivar",
     intro:
-      "Founder and Technical Director building premium digital presence through FlowMind Studio.",
+      "Founder, developer, and technical director building clean digital presence for serious businesses.",
     body:
-      "I design and build polished websites, local SEO systems, and public-facing digital experiences for real businesses that need to look trustworthy from the first scroll.",
-    pullquote:
-      "A website should feel like a real person is behind it, not just a template trying to look expensive.",
+      "I help companies look credible online through focused websites, local SEO structure, and practical technical direction.",
     ctas: {
-      primary: "Visit FlowMind Studio",
-      secondary: "See work",
+      primary: "Work with FlowMind Studio",
+      secondary: "View selected work",
       tertiary: "Email me",
     },
   },
-  signals: [
+  facts: [
     {
-      value: "Studio",
-      label: "Founder-led digital presence through FlowMind Studio",
-    },
-    {
-      value: "Live",
-      label: "Business websites built for real clients and search intent",
-    },
-    {
-      value: "SEO",
-      label: "Local visibility, clear structure, and trustworthy pages",
+      value: "Founder",
+      label: "FlowMind Studio",
     },
     {
       value: "Austin",
-      label: "Texas base with work shaped for practical business outcomes",
+      label: "Texas based",
+    },
+    {
+      value: "Web + SEO",
+      label: "Business presence",
     },
   ],
-  manifesto: [
-    {
-      title: "Human before technical",
-      body:
-        "I like websites that feel calm, confident, and alive. Not noisy. Not fake-premium. Just sharp enough to be memorable and clear enough to be trusted.",
-    },
-    {
-      title: "Clarity is structure",
-      body:
-        "Good communication is not decoration. It is sequencing, hierarchy, rhythm, and emotional timing. The same principles that make an experience feel clear also help a landing page convert.",
-    },
-    {
-      title: "Built to be found",
-      body:
-        "This personal site is also part of my public search footprint. It is designed to connect my name, my work, my business, and my professional identity in a clean and indexable way.",
-    },
+  bio: {
+    kicker: "About",
+    title: "A practical founder with a technical background.",
+    paragraphs: [
+      "I am a developer and founder based in Austin, Texas. Through FlowMind Studio, I help real businesses improve how they appear, communicate, and convert online.",
+      "My work combines software development, visual direction, local SEO, and cybersecurity-aware thinking. I care about websites that feel clear, reliable, and human from the first visit.",
+    ],
+  },
+  business: {
+    kicker: "Business",
+    title: "Digital presence built for trust.",
+    body:
+      "FlowMind Studio creates professional websites, local SEO structures, and business-facing digital systems for companies that want to be found, understood, and contacted with confidence.",
+  },
+  services: [
+    "Web development",
+    "Local SEO",
+    "Technical direction",
+    "Business websites",
+    "Search presence",
+    "Security-aware structure",
   ],
   portfolio: [
     {
       id: "flowmind",
       title: "FlowMind Studio",
-      category: "Founder website · Development studio",
+      category: "Founder website | Development studio",
       location: "Texas, United States",
       metric: "Live business website",
       href: "https://flowmindstudio.com/",
       hrefLabel: "Visit website",
-      image: null,
+      image: "/assets/portfolio/flowmind-studio-preview.png",
       summary:
-        "My flagship business presence. A founder-led website designed to communicate premium web development, local SEO, and sharp digital direction with clarity.",
+        "My flagship business presence for web development, local SEO, and clear digital direction.",
       detail:
-        "This project carries my own positioning, service framing, visual standards, and leadership voice. It is the clearest public expression of how I think about trust, clarity, and digital presence.",
-      tags: ["Founder brand", "Art direction", "Conversion structure", "Local SEO"],
+        "FlowMind represents how I frame trust, structure services, and lead client-facing digital work.",
+      tags: ["Founder brand", "Web development", "Local SEO"],
     },
     {
       id: "zcleaning",
@@ -92,25 +94,25 @@ export const site = {
       hrefLabel: "Visit live site",
       image: "/assets/portfolio/carrusel-zcleaning.avif",
       summary:
-        "A bilingual residential cleaning website built to speak clearly to both English and Spanish audiences in Austin.",
+        "A bilingual cleaning website built for local trust, fast contact, and mobile-first service clarity.",
       detail:
-        "The focus here is practical trust: mobile-first structure, clean service communication, strong local-search intent, and fast-loading pages that make contacting the business feel immediate.",
-      tags: ["Bilingual EN/ES", "Mobile-first", "Local SEO", "Fast load"],
+        "The site supports English and Spanish users while keeping calls, estimates, and services easy to find.",
+      tags: ["Bilingual", "Local SEO", "Mobile-first"],
     },
     {
       id: "brilliant",
       title: "Brilliant Cleaning Services LLC",
-      category: "Premium cleaning website",
+      category: "Premium service website",
       location: "Virginia, United States",
       metric: "Live in production",
       href: "https://www.brilliantcleaningservicesllc.com",
       hrefLabel: "Visit live site",
       image: "/assets/portfolio/carrusel-brilliant.avif",
       summary:
-        "A trust-first service website with a more premium emotional tone, built to make the company feel established before the first call.",
+        "A polished service website shaped to make the company feel established before the first call.",
       detail:
-        "This project is about polish and confidence. The design, content order, and mobile handling were all shaped to reduce hesitation and make the brand feel worth contacting.",
-      tags: ["Premium design", "Trust-building", "Mobile-first", "Fast load"],
+        "The direction focuses on credibility, clear service framing, and a calmer premium tone.",
+      tags: ["Trust", "Service design", "Responsive"],
     },
     {
       id: "ultrashine",
@@ -122,118 +124,50 @@ export const site = {
       hrefLabel: "Visit live site",
       image: "/assets/portfolio/carrusel-ultrashine.avif",
       summary:
-        "A Spanish-first website for a cleaning and painting company, built to dominate local intent and make estimates feel easy to request.",
+        "A Spanish-first cleaning and painting website built for local visibility and estimate requests.",
       detail:
-        "The site balances speed, service clarity, and local search visibility while staying friendly and direct for real users on mobile devices.",
-      tags: ["Spanish-first", "Local SEO", "Estimate CTA", "Fast load"],
-    },
-  ],
-  conceptLab: [
-    {
-      title: "BluePeak Plumbing",
-      image: "/assets/portfolio/carrusel-plumber.avif",
-      description:
-        "A service-business concept focused on urgency, quick quotes, and call-first behavior.",
-    },
-    {
-      title: "Velvet Ember",
-      image: "/assets/portfolio/carrusel-restaurant.avif",
-      description:
-        "A restaurant concept designed around mood, reservations, and direct-booking intent.",
-    },
-    {
-      title: "Performance Gym",
-      image: "/assets/portfolio/carrusel-gym.avif",
-      description:
-        "A sharper editorial concept for movement, membership, and rhythm-heavy visual design.",
-    },
-    {
-      title: "Cleaning Conversion Study",
-      image: "/assets/portfolio/carrusel-cleaning.avif",
-      description:
-        "A focused landing study for service communication, estimate flow, and polished credibility.",
+        "The site keeps the path to services and contact direct for real mobile users.",
+      tags: ["Spanish-first", "Local SEO", "Estimates"],
     },
   ],
   strengths: [
     {
-      title: "Programming with product awareness",
+      title: "Product-aware programming",
       body:
-        "I write and direct software with the business outcome in mind, not just the implementation details.",
+        "I build with the business outcome in mind, not only the implementation detail.",
     },
     {
-      title: "Development leadership",
+      title: "Technical direction",
       body:
-        "I can lead direction, prioritize quality, and keep a project moving with accountability and calm communication.",
+        "I can lead structure, priorities, quality, and delivery across a web project.",
     },
     {
-      title: "Responsible execution",
+      title: "Trust-focused execution",
       body:
-        "I care about reliability, ownership, and follow-through. If my name is attached to the work, it should feel finished.",
+        "I care about reliability, presentation, ownership, and the details that make a site feel finished.",
     },
     {
-      title: "Security-minded thinking",
+      title: "Security-aware thinking",
       body:
-        "My cybersecurity background makes me pay attention to structure, exposure, and trust long before a site goes live.",
+        "My cybersecurity background shapes how I think about structure, exposure, and public trust.",
     },
   ],
   engineeringRange: [
     {
-      title: "Programming paradigms",
-      items: ["OOP", "Functional", "Reactive", "Declarative", "Concurrent thinking"],
+      title: "Frontend and interfaces",
+      items: ["JavaScript", "TypeScript", "React", "Astro", "UI systems"],
     },
     {
-      title: "Systems and backend",
-      items: [
-        "C",
-        "C++",
-        "Rust",
-        "Go",
-        "Java",
-        "Spring Boot",
-        "C#",
-        ".NET Core",
-        "Python",
-        "Django",
-        "FastAPI",
-      ],
+      title: "Backend and systems",
+      items: ["Python", "FastAPI", "Django", "Java", "Spring Boot", "Go"],
     },
     {
-      title: "Frontend and product interfaces",
-      items: ["JavaScript", "TypeScript", "PHP", "Ruby", "React", "Astro", "UI systems"],
+      title: "Data and delivery",
+      items: ["PostgreSQL", "MySQL", "MongoDB", "Docker", "CI/CD"],
     },
     {
-      title: "Mobile and cross-platform",
-      items: ["Swift", "Kotlin", "Dart", "Flutter"],
-    },
-    {
-      title: "Data and architecture",
-      items: [
-        "PostgreSQL",
-        "MySQL",
-        "MongoDB",
-        "Redis",
-        "Cassandra",
-        "Microservices",
-        "Serverless",
-        "Event-driven systems",
-      ],
-    },
-    {
-      title: "Cloud, DevOps, and delivery",
-      items: ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "CI/CD", "Terraform"],
-    },
-    {
-      title: "Security and resilience",
-      items: ["Secure by design", "OWASP thinking", "Advanced debugging", "Incident response"],
-    },
-    {
-      title: "Leadership and communication",
-      items: [
-        "Technical mentoring",
-        "Architectural thinking",
-        "Cross-functional communication",
-        "Fast adaptation",
-      ],
+      title: "Security and direction",
+      items: ["OWASP thinking", "Technical leadership", "Search structure"],
     },
   ],
   experience: [
@@ -242,13 +176,13 @@ export const site = {
       company: "FlowMind LLC",
       start: "January 2026",
       end: "Present",
-      location: "Texas, United States · Remote",
+      location: "Texas, United States | Remote",
       body:
-        "Founder of a professional web development studio focused on artistic websites, local SEO, clean search presence, and polished client delivery.",
+        "Founder of a professional web development studio focused on business websites, local SEO, clean search presence, and polished client delivery.",
       highlights: [
-        "Lead a four-person team across direction, delivery, and quality",
-        "Shape positioning, development, and search visibility",
-        "Build premium business websites with strong art direction and clear communication",
+        "Lead direction, delivery, and quality across client projects",
+        "Shape website structure, service positioning, and search visibility",
+        "Build business websites with practical design and technical discipline",
       ],
     },
     {
@@ -285,13 +219,13 @@ export const site = {
       label: "Email",
       value: "criszaldivar03@gmail.com",
       href: "mailto:criszaldivar03@gmail.com",
-      note: "Best for serious conversations, introductions, and hiring outreach.",
+      note: "Best for business, collaboration, and professional outreach.",
     },
     {
       label: "LinkedIn",
       value: "Professional profile",
       href: "https://www.linkedin.com/in/cristhian-guerrero-z",
-      note: "Best for professional context, background, and introductions.",
+      note: "Best for background, introductions, and work context.",
     },
     {
       label: "FlowMind",
@@ -301,27 +235,25 @@ export const site = {
     },
   ],
   footerNote:
-    "Built in Astro as a cinematic one-page CV to connect name, work, business, and trust in one place.",
+    "Personal landing page for Cristhian Guerrero Zaldivar, founder of FlowMind Studio.",
   seo: {
     title:
-      "Cristhian Guerrero Zaldivar | Developer & Technical Director in Austin, Texas | Founder of FlowMind Studio",
+      "Cristhian Guerrero Zaldivar | Founder, Developer & Technical Director in Austin, Texas",
     description:
-      "Personal website of Cristhian Guerrero Zaldivar, developer and founder of FlowMind Studio in Austin, Texas. Building artistic websites, local SEO systems, and trustworthy digital experiences.",
+      "Personal website of Cristhian Guerrero Zaldivar, founder of FlowMind Studio in Austin, Texas. Focused on professional websites, local SEO, and trustworthy digital presence for businesses.",
     keywords: [
       "Cristhian Guerrero Zaldivar",
-      "Cristhian Guerrero Zaldívar",
       "Cristian Guerrero Zaldivar",
       "Kristian Guerrero Zaldivar",
       "Cristhian Guerrero",
       "Austin Texas developer",
-      "Austin Texas web developer",
+      "Austin web developer",
       "technical director",
       "FlowMind Studio",
       "FlowMind Studio founder",
-      "programmer in Austin",
-      "Texas software developer",
-      "artistic web developer",
+      "business websites",
       "local SEO developer",
+      "digital presence",
     ],
   },
 };
@@ -334,10 +266,10 @@ export const structuredData = {
       name: site.name,
       alternateName: site.altNames,
       description:
-        "Developer and founder based in Austin, Texas. Founder of FlowMind Studio, focused on artistic websites, local SEO, and polished digital systems.",
+        "Founder, developer, and technical director based in Austin, Texas. Founder of FlowMind Studio, focused on professional websites, local SEO, and trustworthy digital presence.",
       url: "https://kriswarrior.github.io/Cristhian-Guerrero-Zaldivar/",
       image:
-        "https://kriswarrior.github.io/Cristhian-Guerrero-Zaldivar/assets/profile/cristhian-guerrero-zaldivar-portrait.png",
+        "https://kriswarrior.github.io/Cristhian-Guerrero-Zaldivar/assets/profile/cristhian-founder-portrait.jpg",
       email: site.email,
       jobTitle: "Founder of FlowMind Studio",
       worksFor: {
@@ -354,11 +286,11 @@ export const structuredData = {
       sameAs: [site.links.linkedin, site.links.github, site.links.flowmind],
       knowsAbout: [
         "Web development",
-        "Design direction",
+        "Technical direction",
         "Local SEO",
+        "Business websites",
         "Software architecture",
         "Cybersecurity",
-        "Technical direction",
       ],
     },
     {
@@ -370,7 +302,7 @@ export const structuredData = {
         name: site.name,
       },
       description:
-        "Founder-led studio focused on artistic websites, local SEO, and high-trust digital experiences.",
+        "Founder-led studio focused on professional websites, local SEO, and trustworthy digital presence for businesses.",
     },
     {
       "@type": "WebSite",

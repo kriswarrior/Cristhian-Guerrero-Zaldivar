@@ -15,7 +15,7 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
   <main class="resume-page">
     <section class="resume-shell">
       <div class="resume-topbar">
-        <a href={withBase()}>← Back to main landing</a>
+        <a href={withBase()}>Back to main landing</a>
         <div class="resume-topbar-actions">
           <button type="button" onclick="window.print()">Print / Save as PDF</button>
           <a href={cvPdf} download>Download generated PDF</a>
@@ -26,7 +26,7 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
         <div>
           <p>{site.role}</p>
           <h1>{site.name}</h1>
-          <h2>Founder of FlowMind Studio · Austin, Texas</h2>
+          <h2>Founder of FlowMind Studio | Austin, Texas</h2>
         </div>
 
         <div class="resume-contact">
@@ -40,9 +40,9 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
       <section class="resume-section">
         <h3>Profile</h3>
         <p>
-          Austin-based developer and founder leading FlowMind Studio. I build artistic websites,
+          Austin-based developer and founder leading FlowMind Studio. I build professional websites,
           trustworthy digital systems, and clean public-facing experiences that connect clear communication,
-          search visibility, and professional credibility.
+          search visibility, and business credibility.
         </p>
       </section>
 
@@ -65,8 +65,8 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
           {site.experience.map((item) => (
             <article>
               <div class="resume-row">
-                <strong>{item.title} · {item.company}</strong>
-                <span>{item.start} — {item.end}</span>
+                <strong>{item.title} | {item.company}</strong>
+                <span>{item.start} - {item.end}</span>
               </div>
               <span>{item.location}</span>
               <p>{item.body}</p>
@@ -89,7 +89,7 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
             {site.education.map((item) => (
               <article>
                 <strong>{item.school}</strong>
-                <span>{item.start} — {item.end}</span>
+                <span>{item.start} - {item.end}</span>
                 <p>{item.degree}</p>
               </article>
             ))}
@@ -108,10 +108,10 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
 
     .resume-shell {
       padding: 1.5rem;
-      border-radius: 28px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      background: rgba(8, 16, 28, 0.9);
-      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.24);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 253, 250, 0.9);
+      box-shadow: var(--shadow);
     }
 
     .resume-topbar,
@@ -138,9 +138,9 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
     .resume-topbar-actions a,
     .resume-topbar-actions button {
       padding: 0.75rem 1rem;
+      border: 1px solid var(--line);
       border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      background: rgba(255, 255, 255, 0.04);
+      background: #fff;
       color: inherit;
       cursor: pointer;
     }
@@ -149,25 +149,26 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
       align-items: flex-start;
       padding-bottom: 2rem;
       margin-bottom: 2rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid var(--line);
     }
 
     .resume-hero p {
-      color: var(--accent-cool);
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
+      color: var(--teal);
       font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
     }
 
     .resume-hero h1 {
       max-width: none;
-      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-size: 4rem;
     }
 
     .resume-hero h2 {
       margin-top: 0.75rem;
-      font-size: clamp(1.1rem, 2vw, 1.8rem);
+      max-width: none;
       color: var(--muted);
+      font-size: 1.35rem;
     }
 
     .resume-contact {
@@ -192,9 +193,9 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
 
     .resume-list article {
       padding: 1rem 1.1rem;
-      border-radius: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.68);
     }
 
     .resume-list strong,
@@ -227,15 +228,21 @@ const cvPdf = withBase("assets/cv/Cristhian-Guerrero-Zaldivar-CV.pdf");
     @media (max-width: 900px) {
       .resume-topbar,
       .resume-hero,
-      .resume-row,
-      .resume-grid {
+      .resume-row {
         flex-direction: column;
+      }
+
+      .resume-grid {
         grid-template-columns: 1fr;
       }
 
       .resume-contact {
         align-items: flex-start;
         text-align: left;
+      }
+
+      .resume-hero h1 {
+        font-size: 2.8rem;
       }
     }
 
